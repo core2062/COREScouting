@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # Allow Display of elements in HTML
 
 """ Simple interface for scout users to select the team/match they are designated

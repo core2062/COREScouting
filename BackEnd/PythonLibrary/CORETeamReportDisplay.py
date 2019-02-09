@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # Allow Display of elements in HTML
 
 """ Creates a simple user interface for the user to select teams to generate an advanced
