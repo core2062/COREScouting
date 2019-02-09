@@ -75,44 +75,54 @@
 							<a href="#panel2" class="show-for-small-only">Autonomous Period</a>
 	        					<div id="panel2" class="content">
 	        						<div class="content-box section-box">
-                                        <div class="row">
-                                    		<fieldset class="large-6 columns">
-                                        	<legend>Crossed Auto Line:</legend>
-                                         		<input name="CrossedBaselineAuto" id="CrossedBaseline" value="CrossedBaseLine" type="checkbox"><label for="CrossedBaseline">Yes</label>
-                                    		</fieldset>
-                                        </div>
-      									<div class="row">
-      										<fieldset class="large-6 columns">
-      										<legend>Delivered Cube in Switch:</legend>
-      										 	<input onclick="EnableAutoGearStatus()"  name=								"CubeSwitchAuto" id="LeftSwitchAuto" value="LeftSwitchAuto" type="radio"><label for="LeftSwitchAuto">			Left</label>
-      										 	<input required="" onclick="EnableAutoGearStatus()" name="CubeSwitchAuto" id="RightSwitchAuto" value="RightSwitchAuto" type="radio"><label for="RightSwitchAuto">Right</label>
-      										 	<input required="" onclick="EnableAutoGearStatus()" name="CubeSwitchAuto" id="FailedSwitchAuto" value="FailedSwitchAuto" type="radio"><label for="FailedSwitchAuto">Fail</label>
-       										 	<input required="" onclick="DisableAutoGearStatus()" name="CubeSwitchAuto" id="NoAttempt" value="NoAttempt" type="radio"><label for="NoAttempt">No Attempt</label>
-      										</fieldset>
-                        				</div>
+									<div class="row">
+                    					<div class="large-12 columns">
+                      						<div class="row collapse">
+                          						<label>Hatches Scored in Autonomous:</label>
+                        							<div class="small-4 columns">
 
-                                        <div class="row">
-      										<fieldset class="large-6 columns">
-                                                <legend>Delivered Cube in Scale:</legend>
-                                                    <input onclick="EnableAutoGearStatus()"  name=								"CubeScaleAuto" id="LeftScaleAuto" value="LeftScaleAuto" type="radio"><label for="LeftScaleAuto">Left</label>
-                                                    <input required="" onclick="EnableAutoGearStatus()" name="CubeScaleAuto" id="RightScaleAuto" value="RightScaleAuto" type="radio"><label for="RightScaleAuto">Right</label>
-                                                    <input required="" onclick="EnableAutoGearStatus()" name="CubeScaleAuto" id="FailedScaleAuto" value="FailedScaleAuto" type="radio"><label for="FailedScaleAuto">Fail</label>
-                                                    <input required="" onclick="DisableAutoGearStatus()" name="CubeScaleAuto" id="NoAttempt" value="NoAttempt" type="radio"><label for="NoAttempt">No Attempt</label>
-      										</fieldset>
-                        				</div>
-                                        <div class="row">
-                                            <fieldset class="large-6 columns">
-                                                <legend>Delivered in Exchange</legend>
-                                                 <input onclick="EnableAutoExchangeStatus()"  name=                              "CubeExchangeAuto" id="ExchangeAuto" value="ExchangeAuto" type="radio"><label for="ExchangeAuto">Yes</label>
-                                                    <input required="" onclick="DisableAutoExchangeStatus()" name="CubeExchangeAuto" id="NoAttempt" value="NoAttempt" type="radio"><label for="NoAttempt">No</label>
-                                                    <input required="" onclick="EnableExchangeStatus()" name="CubeExchangeAuto" id="FailedExchangeAuto" value="FailedExchangeAuto" type="radio"><label for="FailedExchangeAuto">Fail</label>
-      										</fieldset>
-                                        </div>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("HatchAuton").stepDown(1);' value='-'/>
+                        							</div>
+                        							<div class="small-4 columns">
+                           					 			<input required type="number" name="HatchAuton" id="HatchAuton" min="0" step="1" value ="0" required readonly>
+                        							</div>
+                        							<div class="small-4 columns">
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("HatchAuton").stepUp(1);' value='+'/>
+                        							</div>
+                      							</div>
+                   				 			</div>
+										</div> 
+										<div class="row">
+                    					<div class="large-12 columns">
+                      						<div class="row collapse">
+                          						<label>Cargo Scored in Autonomous:</label>
+                        							<div class="small-4 columns">
+
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("CargoAuton").stepDown(1);' value='-'/>
+                        							</div>
+                        							<div class="small-4 columns">
+                           					 			<input required type="number" name="CargoAuton" id="CargoAuton" min="0" step="1" value ="0" required readonly>
+                        							</div>
+                        							<div class="small-4 columns">
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("CargoAuton").stepUp(1);' value='+'/>
+                        							</div>
+                      							</div>
+                   				 			</div>
+										  </div>
+										  
+										  <fieldset>
+                                    <legend>Autonomous Starting Level:</legend>
+                                    <div class="row">
+                                        <input required="" name="AutoStart" id="1stLevel" value="1stLevel" type="radio"><label for="1stLevel">1st Level Start</label>
+                                        <input required="" name="AutoStart" id="2ndLevel" value="2ndLevel" type="radio"><label for="2ndLevel">2nd Level Start</label>
+                                        <input required="" name="AutoStart" id="Fail" value="Fail" type="radio"><label for="Fail">Fail</label>
+                                        <input required="" name="AutoStart" id="NoAttempt" value="NoAttempt" type="radio"><label for="NoAttempt">No Attempt</label>
+                                        <!-- <legend>Assisted Robots with Climb:</legend>
+                                        <input name="ClimbAssist" id="ClimbAssist" type="checkbox"><label for="ClimbAssist">Climb Assist?</label> -->
+                                    </div>
+								</fieldset>
       								</div>
-      							</div>
-
-
-
+								  </div>
 
       					<a href="#panel3" class="show-for-small-only">Teleoperated Period</a>
       						<div id="panel3" class="content">
@@ -121,16 +131,16 @@
                    					<div class="row">
                     					<div class="large-12 columns">
                       						<div class="row collapse">
-                          						<label>Cubes Delivered to Own Switch:</label>
+                          						<label>High Level Hatches Scored:</label>
                         							<div class="small-4 columns">
 
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("OwnSwitchCubesDelivered").stepDown(1);' value='-'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("HighHatch").stepDown(1);' value='-'/>
                         							</div>
                         							<div class="small-4 columns">
-                           					 			<input required type="number" name="OwnSwitchCubesDelivered" id="OwnSwitchCubesDelivered" min="0" step="1" value ="0" required readonly>
+                           					 			<input required type="number" name="HighHatch" id="HighHatch" min="0" step="1" value ="0" required readonly>
                         							</div>
                         							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("OwnSwitchCubesDelivered").stepUp(1);' value='+'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("HighHatch").stepUp(1);' value='+'/>
                         							</div>
                       							</div>
                    				 			</div>
@@ -139,33 +149,33 @@
 									<div class="row">
                     					<div class="large-12 columns">
                       						<div class="row collapse">
-                          				<label>Cubes Delivered to Scale:</label>
-                        				<div class="small-4 columns">
-                          					<input required type='button' class="button postfix" onclick='document.getElementById("ScaleCubesDelivered").stepDown(1);' value='-'/>
-                        				</div>
-                        				<div class="small-4 columns">
-                           					 <input required type="number" name="ScaleCubesDelivered" id="ScaleCubesDelivered" min="0" step="1" value ="0" required readonly>
-                        				</div>
-                        				<div class="small-4 columns">
-                          				<input required type='button' class="button postfix" onclick='document.getElementById("ScaleCubesDelivered").stepUp(1);' value='+'/>
-                        				</div>
-                      				</div>
-                   				 </div>
-                  				</div>
+                          						<label>Medium Level Hatches Scored:</label>
+                        							<div class="small-4 columns">
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("MediumHatch").stepDown(1);' value='-'/>
+                        							</div>
+                        							<div class="small-4 columns">
+                           								 <input required type="number" name="MediumHatch" id="MediumHatch" min="0" step="1" value ="0" required readonly>
+                        							</div>
+                        							<div class="small-4 columns">
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("MediumHatch").stepUp(1);' value='+'/>
+                        							</div>
+                      							</div>
+                   				 			</div>
+                  						</div>
 
 
                    					<div class="row">
                     					<div class="large-12 columns">
                       						<div class="row collapse">
-                                                <label>Cubes Delivered to Opposing Switch:</label>
+                                                <label>Low Level Hatches Scored:</label>
                                                 <div class="small-4 columns">
-                                                    <input required type='button' class="button postfix" onclick='document.getElementById("OpposingSwitchCubesDelivered").stepDown(1);' value='-'/>
+                                                    <input required type='button' class="button postfix" onclick='document.getElementById("LowHatch").stepDown(1);' value='-'/>
                                                 </div>
                                                 <div class="small-4 columns">
-                                                     <input required type="number" name="OpposingSwitchCubesDelivered" id="OpposingSwitchCubesDelivered" min="0" step="1" value ="0" required readonly>
+                                                     <input required type="number" name="LowHatch" id="LowHatch" min="0" step="1" value ="0" required readonly>
                                                 </div>
                                                 <div class="small-4 columns">
-                                                <input required type='button' class="button postfix" onclick='document.getElementById("OpposingSwitchCubesDelivered").stepUp(1);' value='+'/>
+                                                <input required type='button' class="button postfix" onclick='document.getElementById("LowHatch").stepUp(1);' value='+'/>
                                                 </div>
                                  			</div>
                    				 		</div>
@@ -173,57 +183,62 @@
                                     <div class="row">
                     					<div class="large-12 columns">
                       						<div class="row collapse">
-                                                <label>Cubes Delivered to Exchange:</label>
+                                                <label>High Level Cargo Scored:</label>
                                                 <div class="small-4 columns">
-                                                    <input required type='button' class="button postfix" onclick='document.getElementById("ExchangeCubesDelivered").stepDown(1);' value='-'/>
+                                                    <input required type='button' class="button postfix" onclick='document.getElementById("HighCargo").stepDown(1);' value='-'/>
                                                 </div>
                                                 <div class="small-4 columns">
-                                                     <input required type="number" name="ExchangeCubesDelivered" id="ExchangeCubesDelivered" min="0" step="1" value ="0" required readonly>
+                                                     <input required type="number" name="HighCargo" id="HighCargo" min="0" step="1" value ="0" required readonly>
                                                 </div>
                                                 <div class="small-4 columns">
-                                                <input required type='button' class="button postfix" onclick='document.getElementById("ExchangeCubesDelivered").stepUp(1);' value='+'/>
+                                                <input required type='button' class="button postfix" onclick='document.getElementById("HighCargo").stepUp(1);' value='+'/>
                                                 </div>
                                  			</div>
                    				 		</div>
-                  					</div>
-                  				</fieldset>
-      							<div class="row">
-      									<fieldset class="large-12 columns">
-
-      										<legend>Cube Manipulation:</legend>
-
-      										 <input name="CubeFloorPickup" id="CubeFloorPickup" type="checkbox"><label for="CubeFloorPickup">Cube Floor Pickup?</label>
-
-      										<legend>Cube Handling Type:</legend>
-      										 <input required="" name="GearFloorPickupType" id="ActivePickup" value="Active" type="radio"><label for="ActivePickup">Active</label>
-      										  <input required="" name="GearFloorPickupType" id="PassivePickup" value="Passive" type="radio"><label for="PassivePickup">Passive</label>
-      										  <input required="" name="GearFloorPickupType" id="NoPickup" value="None" type="radio"><label for="NoPickup">None</label>
-      									</fieldset>
-      								</div>
-								</div>
+									  </div>
+									  <div class="row">
+                    					<div class="large-12 columns">
+                      						<div class="row collapse">
+                                                <label>Medium Level Cargo Scored:</label>
+                                                <div class="small-4 columns">
+                                                    <input required type='button' class="button postfix" onclick='document.getElementById("MediumCargo").stepDown(1);' value='-'/>
+                                                </div>
+                                                <div class="small-4 columns">
+                                                     <input required type="number" name="MediumCargo" id="MediumCargo" min="0" step="1" value ="0" required readonly>
+                                                </div>
+                                                <div class="small-4 columns">
+                                                <input required type='button' class="button postfix" onclick='document.getElementById("MediumCargo").stepUp(1);' value='+'/>
+                                                </div>
+                                 			</div>
+                   				 		</div>
+									  </div>
+									  <div class="row">
+                    					<div class="large-12 columns">
+                      						<div class="row collapse">
+                                                <label>Low Level Cargo Scored:</label>
+                                                <div class="small-4 columns">
+                                                    <input required type='button' class="button postfix" onclick='document.getElementById("LowCargo").stepDown(1);' value='-'/>
+                                                </div>
+                                                <div class="small-4 columns">
+                                                     <input required type="number" name="LowCargo" id="LowCargo" min="0" step="1" value ="0" required readonly>
+                                                </div>
+                                                <div class="small-4 columns">
+                                                <input required type='button' class="button postfix" onclick='document.getElementById("LowCargo").stepUp(1);' value='+'/>
+                                                </div>
+                                 			</div>
+                   				 		</div>
 								<fieldset>
                                     <legend>Climbing:</legend>
                                     <div class="row">
                                         <input required="" name="Climb" id="NoClimb" value="NoClimb" type="radio"><label for="NoClimb">No Climb</label>
-                                        <input required="" name="Climb" id="DidClimb" value="DidClimb" type="radio"><label for="DidClimb">Successful Climb</label>
-                                        <input required="" name="Climb" id="ClimbPark" value="ClimbPark" type="radio"><label for="ClimbPark">Parked</label>
-                                        <input required="" name="Climb" id="ClimbLevitate" value="ClimbLevitate" type="radio"><label for="ClimbLevitate">Levitated</label>
+                                        <input required="" name="Climb" id="1stLevel" value="1stLevel" type="radio"><label for="1stLevel">1st Level Climb</label>
+                                        <input required="" name="Climb" id="2ndLevel" value="2ndLevel" type="radio"><label for="2ndLevel">2nd Level Climb</label>
+                                        <input required="" name="Climb" id="3rdLevel" value="3rdLevel" type="radio"><label for="3rdLevel">3rd Level Climb</label>
                                         <input required="" name="Climb" id="ClimbFail" value="ClimbFail" type="radio"><label for="ClimbFail">Failed Climb</label>
-                                        <legend>Assisted Robots with Climb:</legend>
-                                        <input name="ClimbAssist" id="ClimbAssist" type="checkbox"><label for="ClimbAssist">Climb Assist?</label>
+                                        <!-- <legend>Assisted Robots with Climb:</legend>
+                                        <input name="ClimbAssist" id="ClimbAssist" type="checkbox"><label for="ClimbAssist">Climb Assist?</label> -->
                                     </div>
 								</fieldset>
-
-                                <div class="row">
-                                    <fieldset class="large-6 columns">
-                                        <legend>Defense:</legend>
-                       <input required="" name="Defense" id="NotGreat" value="NotGreat" type="radio"><label for="NotGreat">Not Great</label>
-                       <input required="" name="Defense" id="Alright" value="Alright" type="radio"><label for="Alright">Alright</label>
-                       <input required="" name="Defense" id="Good" value="Good" type="radio"><label for="Good">Good</label>
-                       <input required="" name="Defense" id="Amazing" value="Amazing" type="radio"><label for="Amazing">Amazing</label>
-                       <input required="" name="Defense" id="DefenseNone" value="None" type="radio"><label for="DefenseNone">None</label>
-                                    </fieldset>
-                                </div>
       						</div>
                             <div class="row">
                             <div class="large-12 columns">
