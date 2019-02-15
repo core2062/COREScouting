@@ -74,37 +74,37 @@ class TeamData(CORETeamData.Team):
         AverageHighHatch = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[1])
         self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[0]] = AverageHighHatch
         #Average Medium Hatch
-        AverageMediumHatch = self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[1]]
-        self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[2]) = AverageMediumHatch
+        AverageMediumHatch = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[2])
+        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[1]] = AverageMediumHatch
         #Average Low Hatch
-        AverageLowHatch = self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[2]] 
-        self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[3]) = AverageLowHatch
+        AverageLowHatch = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[3])
+        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[2]]  = AverageLowHatch
         #Average High Cargo
-        AverageHighCargo = self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[3]]
-        self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[4]) = AverageHighCargo
+        AverageHighCargo = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[4])
+        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[3]] = AverageHighCargo
         #Average Medium Cargo
-        AverageMediumCargo = self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[4]]
-        self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[5]) = AverageMediumCargo
+        AverageMediumCargo = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[5])
+        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[4]] = AverageMediumCargo
         #Average Low Cargo
-        AverageLowCargo = self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[5]]
-        self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[6]) = AverageLowCargo
+        AverageLowCargo = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[6])
+        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[5]] = AverageLowCargo
         #Average Cargo
-        self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[1]] = (AverageHighCargo + AverageMediumCargo + AverageLowCargo)
+        self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[1]] = AverageHighCargo + AverageMediumCargo + AverageLowCargo
         #Average Hatches
-        self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[2]] = (AverageHighHatch + AverageLowHatch + AverageMediumHatch)
+        self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[2]] = AverageHighHatch + AverageLowHatch + AverageMediumHatch
         #Climbs
         TotalNoClimbs = self.times_key_exists_in_category(COREDependencies.COREConstants.RADIO_NAMES[0], 'NoClimb')
         Total1stLevelClimbs = self.times_key_exists_in_category(COREDependencies.COREConstants.RADIO_NAMES[0], '1stLevel')
         Total2ndLevelClimbs = self.times_key_exists_in_category(COREDependencies.COREConstants.RADIO_NAMES[0], '2ndLevel')
         Total3rdLevelClimbs = self.times_key_exists_in_category(COREDependencies.COREConstants.RADIO_NAMES[0], '3rdLevel')
         TotalClimbFails = self.times_key_exists_in_category(COREDependencies.COREConstants.RADIO_NAMES[0], 'ClimbFail')
-        self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[0]] = str(Total1stLevelClimbs) + ' : ' + str(Total2ndLevelClimbs) + ' : ' str(Total3rdLevelClimbs) + ' : ' + str(TotalClimbFails) + ' : ' + str(TotalNoClimbs)
+        self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[0]] = str(Total1stLevelClimbs) + ' : ' + str(Total2ndLevelClimbs) + ' : ' + str(Total3rdLevelClimbs) + ' : ' + str(TotalClimbFails) + ' : ' + str(TotalNoClimbs)
         self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[6]] = (Total1stLevelClimbs+Total2ndLevelClimbs+Total3rdLevelClimbs) / MatchesPlayed
         # Comments
         self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[3]] = self.list_all_results(COREDependencies.COREConstants.TEXT_NAMES[1])
         # Average Hatches Auton
-        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[0]]=self.avg_data[COREDependencies.COREConstants.NUMBER_NAMES[6]]
+        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[0]]=self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[6])
         #Average Cargo Auton
-        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[1]]=self.avg_data[COREDependencies.COREConstants.NUMBER_NAMES[7]]
+        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[1]]=self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[7])
         # Climb Assist
         # self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[5]] = self.times_key_exists_in_category('ClimbAssist', 'ON') / MatchesPlayed
