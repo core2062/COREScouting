@@ -49,7 +49,7 @@
       								<div class="row">
       									<div class="small-12 columns">
       										<label>Match Number: *
-											  <input  name="MatchNumber" class="form-control" type="number" placeholder="1" value="<?php $_GET['match']; ?>" required="" readonly/>
+											  <input  name="MatchNumber" class="form-control" type="number" placeholder="1" value="<?php echo $_GET['match']; ?>" required="" readonly/>
 											</label>
 										</div>
 									</div>
@@ -239,6 +239,7 @@
                                         <input name="ClimbAssist" id="ClimbAssist" type="checkbox"><label for="ClimbAssist">Climb Assist?</label> -->
                                     </div>
 								</fieldset>
+								</div>
       						</div>
                             <div class="row">
                             <div class="large-12 columns">
