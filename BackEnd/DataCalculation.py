@@ -103,8 +103,8 @@ class TeamData(CORETeamData.Team):
         # Comments
         self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[3]] = self.list_all_results(COREDependencies.COREConstants.TEXT_NAMES[1])
         # Average Hatches Auton
-        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[0]]=self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[6])
+        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[0]]=self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[7])
         #Average Cargo Auton
-        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[1]]=self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[7])
+        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[1]]=self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[8])
         # Climb Assist
         # self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[5]] = self.times_key_exists_in_category('ClimbAssist', 'ON') / MatchesPlayed
