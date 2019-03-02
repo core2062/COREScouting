@@ -14,7 +14,7 @@ General Team Info (no dependency)
 
 TEAM_NUMBER = 2062
 
-COMPETITION_NAME = 'LaCrosse_Practice'
+COMPETITION_NAME = 'week0Test'
 
 """===========================================
 Scout HTML input field names (form dependency)
@@ -50,7 +50,7 @@ RADIO_NAMES = [
     # 'CargoAuton',
 ]
 RADIO_VALUES = {
-    'Climb': ('NoClimb', '1stLevel', '2ndLevel', '3rdLevel', 'ClimbFail')
+    'Climb': ('NoClimb', '1stLevel', '2ndLevel', '3rdLevel', 'ClimbFail'),
     'AutoStart': ('1stLevel', '2ndLevel', 'Fail', 'NoAttempt'),
     'EndLevel': ('Failed', '1stLevel', '2ndLevel', '3rdLevel', 'None')
     # 'HatchAuton': ('Successful', 'Fail', 'NoAttempt'),
