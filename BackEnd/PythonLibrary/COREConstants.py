@@ -84,7 +84,9 @@ RANK_AND_MATCH_HEADERS = [
     # 'Hatch Auton, Successful Hatch : Fail : No Attempt',
     # 'Cargo Auton, Successful Cargo: Fail : No Attempt',
     'Avg Hatches Auton',
-    'Avg Cargo Auton'
+    'Avg Cargo Auton',
+    'Avg Cargo',
+    'Avg Hatches',
 
 ]
 
@@ -103,8 +105,6 @@ RANK_ONLY_HEADERS = [
 # Shows up on Match Report only
 MATCH_HEADERS = [
     'Climb, 1st Level : 2nd Level : 3rd Level : Fails : None',
-    'Avg Cargo',
-    'Avg Hatches',
     'Comments'
 ]
 
@@ -154,7 +154,9 @@ RANK_OPTIONS = [
     ('LowCargo', 'Avg Low Cargo', 'descending'),
     ('HatchAuton', 'Avg Hatches Auton','descending'),
     ('CargoAuton', 'Avg Cargo Auton','descending'),
-    ('ClimbPercentage', 'Climbing Percentage','descending')
+    ('ClimbPercentage', 'Climbing Percentage','descending'),
+    ('Avg Cargo', 'Avg Cargo', 'descending'),
+    ('Avg Hatch', 'Avg Hatches', 'descending')
 
     
     
