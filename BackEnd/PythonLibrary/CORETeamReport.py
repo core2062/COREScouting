@@ -36,17 +36,17 @@ print('</tr>')
 print('<tr>')
 for dictionary_key in COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS:
     if(type(calculated_team_data.team_data[dictionary_key]) == str):
-        print('<td>' + calculated_team_data.team_data[dictionary_key] + '</td>')
+        print('<td>' + (calculated_team_data.team_data[dictionary_key]).encode('utf-8').strip() + '</td>')
     else: 
         print('<td>' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
 for dictionary_key in COREDependencies.COREConstants.MATCH_HEADERS:
     if(type(calculated_team_data.team_data[dictionary_key]) == str):
-        print('<td>' + calculated_team_data.team_data[dictionary_key] + '</td>')
+        print('<td>' + (calculated_team_data.team_data[dictionary_key]).encode('utf-8').strip() + '</td>')
     else: 
         print('<td>' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
 for dictionary_key in COREDependencies.COREConstants.RANK_ONLY_HEADERS:
     if(type(calculated_team_data.team_data[dictionary_key]) == str):
-        print('<td>' + calculated_team_data.team_data[dictionary_key] + '</td>')
+        print('<td>' + (calculated_team_data.team_data[dictionary_key]).encode('utf-8').strip() + '</td>')
     else: 
         print('<td>' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
 print('</tr>')
