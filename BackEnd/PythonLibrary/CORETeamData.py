@@ -258,7 +258,6 @@ class Team:
             if self._err == 1:
                 return -1
             for data in self._get_data(category):
-                data.replace("’", "\’")
                 if data != 'Not set':
                     output += data + '; '
         return output
