@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*- coding: latin-1 -*-
 # Allow Display of elements in HTML
 
 """ Creates an 'advanced' team analysis interface. Displays all calculated report statistics in
@@ -9,7 +10,9 @@
 import COREDependencies
 import CORETeamData
 import DataCalculation
-
+# import sys
+# reload(sys)
+# sys.setdefaultencoding('UTF8')
 form = COREDependencies.cgi.FieldStorage()
 team_number = int(form.getvalue('team_number'))
 raw_team_data = CORETeamData.Team(team_number)
@@ -34,9 +37,9 @@ print('<tr>')
 for dictionary_key in COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS:
     print('<td>' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
 for dictionary_key in COREDependencies.COREConstants.MATCH_HEADERS:
-    print('<td>' + (calculated_team_data.team_data[dictionary_key]) + '</td>')
+    print('<td>' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
 for dictionary_key in COREDependencies.COREConstants.RANK_ONLY_HEADERS:
-    print('<td>' + (calculated_team_data.team_data[dictionary_key]) + '</td>')
+    print('<td>' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
 print('</tr>')
 print('</table>')
 
