@@ -41,7 +41,10 @@ for dictionary_key in COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS:
         print('<td>' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
 for dictionary_key in COREDependencies.COREConstants.MATCH_HEADERS:
     if(type(calculated_team_data.team_data[dictionary_key]) == str):
-        print('<td>' + str((calculated_team_data.team_data[dictionary_key]).encode("ascii", 'ignore')) + '</td>')
+        b = str((calculated_team_data.team_data[dictionary_key]).encode("ascii", 'ignore'))
+        b.replace('b\'', '')
+        b.replace('\'', '')
+        print('<td>' + b + '</td>')
     else: 
         print('<td>' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
 for dictionary_key in COREDependencies.COREConstants.RANK_ONLY_HEADERS:
@@ -61,7 +64,8 @@ for rows in range(0, (raw_team_data.num_data_entries(COREDependencies.COREConsta
     print('<tr>')
     for dictionary_key in COREDependencies.COREConstants.ALL_NAMES:
         if(type(raw_team_data._category_dictionary[dictionary_key][rows-1]) == str):
-            print('<td>', str((raw_team_data._category_dictionary[dictionary_key][rows-1]).encode("ascii", 'ignore')), '</td>')
+            a = str((raw_team_data._category_dictionary[dictionary_key][rows-1]).encode("ascii", 'ignore'))
+            print('<td>', a, '</td>')
         else:
            print('<td>', raw_team_data._category_dictionary[dictionary_key][rows-1], '</td>') 
     print('</tr>')
