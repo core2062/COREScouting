@@ -169,17 +169,17 @@ class HtmlInput:
         self._insert_SQL += ("INSERT INTO `" + str(self.team_number) + "` (`")
         for checkboxName, checkboxValue in zip(self._checkbox_list, self._checkbox_list_values):
             self._create_table_SQL += ("`" + str(checkboxName) + "` varchar(255) COLLATE utf8_bin NOT NULL,")
-            self._insert_data += (checkboxValue,)
+            self._insert_data += (checkboxValue)
         for radioName, radioValue in zip(self._radio_list, self._radio_list_values):
             self._create_table_SQL += ("`" + str(radioName) + "` varchar(255) COLLATE utf8_bin NOT NULL,")
-            self._insert_data += (radioValue,)
+            self._insert_data += (radioValue)
         for numberName, numberValue in zip(self._number_list, self._number_list_values):
             self._create_table_SQL += ("`" + str(numberName) + "` int(11) NOT NULL,")
-            self._insert_data += (numberValue,)
+            self._insert_data += (numberValue)
         for textName, textValue in zip(self._text_list, self._text_list_values):
             textValue.replace('’', '\'')
             self._create_table_SQL += ("`" + str(textName) + "` varchar(255) COLLATE utf8_bin NOT NULL,")
-            self._insert_data += (textValue,)
+            self._insert_data += (textValue)
         self._create_table_SQL += "PRIMARY KEY (`match_id`),UNIQUE KEY `match_id` (`match_id`)"
         for names in all_list:
             if first == 0:
