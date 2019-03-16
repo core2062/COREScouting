@@ -89,9 +89,9 @@ class TeamData(CORETeamData.Team):
         AverageLowCargo = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[6])
         self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[5]] = AverageLowCargo
         #Average Cargo
-        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[1]] = AverageHighCargo + AverageMediumCargo + AverageLowCargo
+        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[2]] = AverageHighCargo + AverageMediumCargo + AverageLowCargo
         #Average Hatches
-        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[2]] = AverageHighHatch + AverageLowHatch + AverageMediumHatch
+        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[3]] = AverageHighHatch + AverageLowHatch + AverageMediumHatch
         #Climbs
         TotalNoClimbs = self.times_key_exists_in_category(COREDependencies.COREConstants.RADIO_NAMES[0], 'NoClimb')
         Total1stLevelClimbs = self.times_key_exists_in_category(COREDependencies.COREConstants.RADIO_NAMES[0], '1stLevel')
