@@ -32,7 +32,7 @@ for dictionary_key in COREDependencies.COREConstants.RANK_ONLY_HEADERS:
 print('</tr>')
 print('<tr>')
 for dictionary_key in COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS:
-    print('<td>' + (calculated_team_data.team_data[dictionary_key]) + '</td>')
+    print('<td>' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
 for dictionary_key in COREDependencies.COREConstants.MATCH_HEADERS:
     print('<td>' + (calculated_team_data.team_data[dictionary_key]) + '</td>')
 for dictionary_key in COREDependencies.COREConstants.RANK_ONLY_HEADERS:
