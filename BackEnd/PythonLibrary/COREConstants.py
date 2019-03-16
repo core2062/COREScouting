@@ -86,8 +86,7 @@ RANK_AND_MATCH_HEADERS = [
     'Avg Hatches Auton',
     'Avg Cargo Auton',
     'Avg Cargo',
-    'Avg Hatches',
-
+    'Avg Hatches'
 ]
 
 # Shows up as a ranking Option only
