@@ -60,7 +60,7 @@ print('</tr>')
 for rows in range(0, (raw_team_data.num_data_entries(COREDependencies.COREConstants.MATCH_NUMBER['match_number']))):
     print('<tr>')
     for dictionary_key in COREDependencies.COREConstants.ALL_NAMES:
-        print('<td>', raw_team_data._category_dictionary[dictionary_key][rows-1], '</td>')
+        print('<td>', str((raw_team_data._category_dictionary[dictionary_key][rows-1]).encode("acsii", 'ignore')), '</td>')
     print('</tr>')
 print('</table>')
 COREDependencies.framework_end()
