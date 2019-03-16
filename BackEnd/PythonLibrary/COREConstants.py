@@ -103,7 +103,7 @@ RANK_ONLY_HEADERS = [
 
 # Shows up on Match Report only
 MATCH_HEADERS = [
-    'Climb, 1st Level : 2nd Level : 3rd Level : Fails : None'
+    'Climb, 1st Level : 2nd Level : 3rd Level : Fails : None',
     'Comments'
 ]
 
