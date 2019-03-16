@@ -61,7 +61,7 @@ for rows in range(0, (raw_team_data.num_data_entries(COREDependencies.COREConsta
     print('<tr>')
     for dictionary_key in COREDependencies.COREConstants.ALL_NAMES:
         if(type(raw_team_data._category_dictionary[dictionary_key][rows-1]) == str):
-            print('<td>', str((raw_team_data._category_dictionary[dictionary_key][rows-1]).encode("acsii", 'ignore')), '</td>')
+            print('<td>', str((raw_team_data._category_dictionary[dictionary_key][rows-1]).encode("ascii", 'ignore')), '</td>')
         else:
            print('<td>', raw_team_data._category_dictionary[dictionary_key][rows-1], '</td>') 
     print('</tr>')
