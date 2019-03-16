@@ -105,7 +105,7 @@ RANK_ONLY_HEADERS = [
 # Shows up on Match Report only
 MATCH_HEADERS = [
     'Climb, 1st Level : 2nd Level : 3rd Level : Fails : None',
-    'Comments'
+    #'Comments'
 ]
 
 
@@ -156,7 +156,7 @@ RANK_OPTIONS = [
     ('CargoAuton', 'Avg Cargo Auton','descending'),
     ('ClimbPercentage', 'Climbing Percentage','descending'),
     ('Avg Cargo', 'Avg Cargo', 'descending'),
-    ('Avg Hatch', 'Avg Hatches', 'descending')
+    ('Avg Hatch', 'Avg Hatches', 'descendings')
 
     
     
