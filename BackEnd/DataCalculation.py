@@ -101,7 +101,7 @@ class TeamData(CORETeamData.Team):
         self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[0]] = str(Total1stLevelClimbs) + ' : ' + str(Total2ndLevelClimbs) + ' : ' + str(Total3rdLevelClimbs) + ' : ' + str(TotalClimbFails) + ' : ' + str(TotalNoClimbs)
         self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[6]] = (Total1stLevelClimbs+Total2ndLevelClimbs+Total3rdLevelClimbs) / MatchesPlayed
         # Comments
-        #self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[1]] = self.list_all_results(COREDependencies.COREConstants.TEXT_NAMES[1])
+        self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[1]] = self.list_all_results(COREDependencies.COREConstants.TEXT_NAMES[1])
         # Average Hatches Auton
         self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[0]]=self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[7])
         #Average Cargo Auton
