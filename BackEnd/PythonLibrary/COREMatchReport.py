@@ -64,13 +64,15 @@ class MatchReport:
             print('<tr>')
             print('<td>', dictionary_key, '</td>')
             for key in self.TEAM_NUMBER_FIELDS:
-                print('<td>', self._team_dictionary[key].team_data[dictionary_key], '</td>')
+                c = str((self._team_dictionary[key].team_data[dictionary_key]).encode("ascii", 'ignore'))
+                print('<td>', c, '</td>')
             print('</tr>')
         for dictionary_key in COREDependencies.COREConstants.MATCH_HEADERS:
             print('<tr>')
             print('<td>', dictionary_key, '</td>')
             for key in self.TEAM_NUMBER_FIELDS:
-                print('<td>', self._team_dictionary[key].team_data[dictionary_key], '</td>')
+                 d = str((self._team_dictionary[key].team_data[dictionary_key]).encode("ascii", 'ignore'))
+                print('<td>', d, '</td>')
             print('</tr>')
         print('</table>')
         COREDependencies.framework_end()
