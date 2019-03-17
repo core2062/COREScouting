@@ -71,7 +71,7 @@ class MatchReport:
             print('<tr>')
             print('<td>', dictionary_key, '</td>')
             for key in self.TEAM_NUMBER_FIELDS:
-                 d = str((self._team_dictionary[key].team_data[dictionary_key]).encode("ascii", 'ignore'))
+                d = str((self._team_dictionary[key].team_data[dictionary_key]).encode("ascii", 'ignore'))
                 print('<td>', d, '</td>')
             print('</tr>')
         print('</table>')
