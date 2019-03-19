@@ -97,7 +97,7 @@ RANK_ONLY_HEADERS = [
     'Avg High Cargo',
     'Avg Medium Cargo',
     'Avg Low Cargo',
-    'Climbing Percentage'
+    'Average Climb Points'
     #'ClimbAssist'
 ]
 
