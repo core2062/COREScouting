@@ -46,7 +46,7 @@ class TeamData(CORETeamData.Team):
         Total3rdLevelClimbs = self.times_key_exists_in_category(COREDependencies.COREConstants.RADIO_NAMES[0], '3rdLevel')
         TotalClimbFails = self.times_key_exists_in_category(COREDependencies.COREConstants.RADIO_NAMES[0], 'ClimbFail')
         self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[0]] = str(Total1stLevelClimbs) + ' : ' + str(Total2ndLevelClimbs) + ' : ' + str(Total3rdLevelClimbs) + ' : ' + str(TotalClimbFails) + ' : ' + str(TotalNoClimbs)
-        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[6]] = ((Total1stLevelClimbs)+(Total2ndLevelClimbs)+(Total3rdLevelClimbs) / MatchesPlayed)
+        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[6]] = ((Total1stLevelClimbs*3)+(Total2ndLevelClimbs*6)+(Total3rdLevelClimbs*12) / MatchesPlayed)
         # Comments
         self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[1]] = self.list_all_results(COREDependencies.COREConstants.TEXT_NAMES[1])
         # Average Hatches Auton
