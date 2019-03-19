@@ -237,7 +237,8 @@ class HtmlInput:
         print('<h2>You entered the following:</h2>')
         print('<p>Team Number - ' + str(self.team_number) + '</p>')
         for textName, textValue in zip(self._text_list, self._text_list_values):
-            print('<p>', textName, '-', textValue, '</p>')
+            b = str((textName).encode("ascii", 'ignore'))
+            print('<td>' + b[2:len(b)-2] + '</td>')
         for numberName, numberValue in zip(self._number_list, self._number_list_values):
             print('<p>', numberName, '-', numberValue, '</p>')
         for radioName, radioValue in zip(self._radio_list, self._radio_list_values):

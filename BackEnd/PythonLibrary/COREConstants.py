@@ -153,7 +153,7 @@ RANK_OPTIONS = [
     ('LowCargo', 'Avg Low Cargo', 'descending'),
     ('HatchAuton', 'Avg Hatches Auton','descending'),
     ('CargoAuton', 'Avg Cargo Auton','descending'),
-    ('ClimbPercentage', 'Climbing Percentage','descending'),
+    ('ClimbPercentage', 'Average Climb Points','descending'),
     ('Avg Cargo', 'Avg Cargo', 'descending'),
     ('Avg Hatch', 'Avg Hatches', 'descending')
 
