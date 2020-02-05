@@ -25,36 +25,27 @@ TEAM_FIELD_NUMBER = {'team_number': 'TeamNumber'}
 MATCH_NUMBER = {'match_number': 'MatchNumber'}
 
 CHECKBOX_NAMES = [
-    # 'ClimbAssist'
+    'Climb',
+    'AutoStart',
+    'ControlPanel1',
+    'ControlPanel2'
 ]
 NUMBER_NAMES = [
     MATCH_NUMBER['match_number'],
-    'HighHatch',
-    'MediumHatch',
-    'LowHatch',
-    'HighCargo',
-    'MediumCargo',
-    'LowCargo', 
-    'HatchAuton',
-    'CargoAuton'
+    'UpperPort',
+    'LowerPort',
+    'UpperPortAuton',
+    'LowerPortAuton'
+
 ]
 TEXT_NAMES = [
     'ScoutName',
     'comments'
 ]
 RADIO_NAMES = [
-    'Climb',
-    'AutoStart',
-    'EndLevel' 
-    # 'HatchAuton',
-    # 'CargoAuton',
+
 ]
 RADIO_VALUES = {
-    'Climb': ('NoClimb', '1stLevel', '2ndLevel', '3rdLevel', 'ClimbFail'),
-    'AutoStart': ('1stLevel', '2ndLevel', 'Fail', 'NoAttempt'),
-    'EndLevel': ('Failed', '1stLevel', '2ndLevel', '3rdLevel', 'None')
-    # 'HatchAuton': ('Successful', 'Fail', 'NoAttempt'),
-    # 'CargoAuton': ('Successful','Fail','NoAttempt'),
 
 }
 
@@ -76,34 +67,22 @@ Match Report Row Headers (no dependency)
 
 # Show up on Match Report and Ranking Report if applicable
 RANK_AND_MATCH_HEADERS = [
-    # 'Crossed Baseline Percentage',
-    # 'Avg Cubes Delivered: Home Switch',
-    # 'Avg Cubes Delivered: Scale',
-    # 'Avg Cubes Delivered: Opposing Switch',
-    # 'Avg Cubes Delivered: Exchange',
-    # 'Hatch Auton, Successful Hatch : Fail : No Attempt',
-    # 'Cargo Auton, Successful Cargo: Fail : No Attempt',
-    'Avg Hatches Auton',
-    'Avg Cargo Auton',
-    'Avg Cargo',
-    'Avg Hatches'
+    'Avg High Goal',
+    'Avg Low Goal',
+    'Avg High Goal Auton',
+    'Avg Low Goal Auton',
+    'Climbing Percentage',
+    'Control Panel 1 Percentage',
+    'Control Panel 2 Percentage'
 ]
 
 # Shows up as a ranking Option only
 RANK_ONLY_HEADERS = [
-    'Avg High Hatch',
-    'Avg Medium Hatch',
-    'Avg Low Hatch',
-    'Avg High Cargo',
-    'Avg Medium Cargo',
-    'Avg Low Cargo',
-    'Average Climb Points'
-    #'ClimbAssist'
+    'Move In Auto'
 ]
 
 # Shows up on Match Report only
 MATCH_HEADERS = [
-    'Climb, 1st Level : 2nd Level : 3rd Level : Fails : None',
     'Comments'
 ]
 
@@ -156,6 +135,13 @@ RANK_OPTIONS = [
     ('ClimbPercentage', 'Average Climb Points','descending'),
     ('AvgCargo', 'Avg Cargo', 'descending'),
     ('AvgHatch', 'Avg Hatches', 'descending')
+    ('HighGoal, ''Avg High Goal', 
+    'Avg Low Goal',
+    'Avg High Goal Auton',
+    'Avg Low Goal Auton',
+    'Climbing Percentage',
+    'Control Panel 1 Percentage',
+    'Control Panel 2 Percentage'
 
     
     
