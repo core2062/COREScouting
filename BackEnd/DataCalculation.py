@@ -18,7 +18,7 @@ class TeamData(CORETeamData.Team):
         # Total amount of matches played
         MatchesPlayed = self.num_data_entries('MatchNumber')
         # Comments
-        self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[1]] = self.list_all_results(COREDependencies.COREConstants.TEXT_NAMES[1])
+        self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[0]] = self.list_all_results(COREDependencies.COREConstants.TEXT_NAMES[1])
         # Average # of Balls in High Goal
         self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[0]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[1])
         # Average # of Balls in Low Goal
