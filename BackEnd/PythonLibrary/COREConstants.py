@@ -115,35 +115,12 @@ RANK_REPORT_FIELD_NAMES = {
 
 RANK_OPTIONS = [
     # EXAMPLE     ('Defense', 'Defense Rating', 'category', ('Amazing', 'Good', 'Alright', 'Not Great')) (Also can look above for example^^^
-    # ('ClimbPercentage', 'Climbing Percentage', 'descending'),
-    # ('AutoSwitchPercent', 'Auto Switch Percentage', 'descending'),
-    # ('AutoScalePercent', 'Auto Scale Percentage', 'descending'),
-    # ('AutoExchangePercent', 'Auto Exchange Percentage', 'descending'),
-    # ('CrossBaselinePercent', 'Crossed Baseline Percentage', 'descending'),
-    # ('AvgTeleCubesHSwitch', 'Avg Cubes Delivered: Home Switch', 'descending'),
-    # ('AvgTeleCubesOSwitch', 'Avg Cubes Delivered: Opposing Switch', 'descending'),
-    # ('AvgTeleCubesScale', 'Avg Cubes Delivered: Scale', 'descending'),
-    # ('AvgTeleCubesExchange', 'Avg Cubes Delivered: Exchange', 'descending'),
-    ('HighHatch', 'Avg High Hatch', 'descending'),
-    ('MediumHatch', 'Avg Medium Hatch', 'descending'),
-    ('LowHatch', 'Avg Low Hatch', 'descending'),
-    ('HighCargo', 'Avg High Cargo', 'descending'),
-    ('MediumCargo', 'Avg Medium Cargo', 'descending'),
-    ('LowCargo', 'Avg Low Cargo', 'descending'),
-    ('HatchAuton', 'Avg Hatches Auton','descending'),
-    ('CargoAuton', 'Avg Cargo Auton','descending'),
-    ('ClimbPercentage', 'Average Climb Points','descending'),
-    ('AvgCargo', 'Avg Cargo', 'descending'),
-    ('AvgHatch', 'Avg Hatches', 'descending')
-    ('HighGoal, ''Avg High Goal', 
-    'Avg Low Goal',
-    'Avg High Goal Auton',
-    'Avg Low Goal Auton',
-    'Climbing Percentage',
-    'Control Panel 1 Percentage',
-    'Control Panel 2 Percentage'
-
-    
-    
-
+    ('UpperPort', 'Avg High Goal', 'descending'),
+    ('LowerPort', 'Avg Low Goal', 'descending'),
+    ('Climb', 'Climbing Percentage', 'descending'),
+    ('AutoStart', 'Move In Auton', 'descending'),
+    ('ControlPanel1', 'Control Panel 1 Percentage', 'descending'),
+    ('ControlPanel2', 'Control Panel 2 Peercentage', 'descending'),
+    ('UpperPortAuton', 'Avg High Goal Auton', 'descending'),
+    ('LowerPortAuton', 'Avg Low Goal Auton', 'descending'),
 ]
