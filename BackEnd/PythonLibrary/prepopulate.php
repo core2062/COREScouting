@@ -109,11 +109,8 @@
                       							</div>
                    				 			</div>
 										  </div>
-										  
-									<fieldset>
-                                        <legend>Moved in Autonomous:</legend>
+										  							
                                         <input name="AutoStart" id="AutoStart" type="checkbox"><label for="AutoStart">Moved in Auto?</label>
-									</fieldset>
       								</div>
 								  </div>
 
@@ -157,12 +154,12 @@
                   						</div>
 								<fieldset>
 									<legend> Control Panel:</legend>
-									<input name="ControlPanel1" id="ControlPanel1" type="checkbox"><label for="ControlPanel1">Did the robot activate the first level of the control panel</label>
-									<input name="ControlPanel2" id="ControlPanel2" type="checkbox"><label for="ControlPanel2">Did the robot activate the second level of the control panel</label>
+									<input name="ControlPanel1" id="ControlPanel1" type="checkbox"><label for="ControlPanel1">Stage 1 Control Panel?</label>
+									<input name="ControlPanel2" id="ControlPanel2" type="checkbox"><label for="ControlPanel2">Satge 2 Control Panel?</label>
 								</fieldset>
 								<fieldset>
                                     <legend>Climbing:</legend>	
-									<input name="Climb" id="Climb" type="checkbox"><label for="Climb">Did the robot climb</label>
+									<input name="Climb" id="Climb" type="checkbox"><label for="Climb">Successful Climb?</label>
 								</fieldset>
 								</div>
       						</div>
