@@ -155,7 +155,7 @@
 								<fieldset>
 									<legend> Control Panel:</legend>
 									<input name="ControlPanel1" id="ControlPanel1" type="checkbox"><label for="ControlPanel1">Stage 1 Control Panel?</label>
-									<input name="ControlPanel2" id="ControlPanel2" type="checkbox"><label for="ControlPanel2">Satge 2 Control Panel?</label>
+									<input name="ControlPanel2" id="ControlPanel2" type="checkbox"><label for="ControlPanel2">Stage 2 Control Panel?</label>
 								</fieldset>
 								<fieldset>
                                     <legend>Climbing:</legend>	
