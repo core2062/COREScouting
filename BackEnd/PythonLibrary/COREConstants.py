@@ -25,17 +25,15 @@ TEAM_FIELD_NUMBER = {'team_number': 'TeamNumber'}
 MATCH_NUMBER = {'match_number': 'MatchNumber'}
 
 CHECKBOX_NAMES = [
-    'Climb',
     'AutoStart',
-    'ControlPanel1',
-    'ControlPanel2'
 ]
 NUMBER_NAMES = [
     MATCH_NUMBER['match_number'],
-    'UpperPort',
-    'LowerPort',
-    'UpperPortAuton',
-    'LowerPortAuton'
+    'UpperHub',
+    'LowerHub',
+    'UpperHubAuton',
+    'LowerHubAuton',
+    'ClimbLevel'
 
 ]
 TEXT_NAMES = [
@@ -71,9 +69,7 @@ RANK_AND_MATCH_HEADERS = [
     'Avg Low Goal',
     'Avg High Goal Auton',
     'Avg Low Goal Auton',
-    'Climbing Percentage',
-    'Control Panel 1 Percentage',
-    'Control Panel 2 Percentage'
+    'Avg Climbing Level',
 ]
 
 # Shows up as a ranking Option only
@@ -115,12 +111,10 @@ RANK_REPORT_FIELD_NAMES = {
 
 RANK_OPTIONS = [
     # EXAMPLE     ('Defense', 'Defense Rating', 'category', ('Amazing', 'Good', 'Alright', 'Not Great')) (Also can look above for example^^^
-    ('UpperPort', 'Avg High Goal', 'descending'),
-    ('LowerPort', 'Avg Low Goal', 'descending'),
-    ('Climb', 'Climbing Percentage', 'descending'),
+    ('UpperHub', 'Avg High Goal', 'descending'),
+    ('LowerHub', 'Avg Low Goal', 'descending'),
+    ('Climb', 'Avg Climbing Level', 'descending'),
     ('AutoStart', 'Move In Auton', 'descending'),
-    ('ControlPanel1', 'Control Panel 1 Percentage', 'descending'),
-    ('ControlPanel2', 'Control Panel 2 Peercentage', 'descending'),
     ('UpperPortAuton', 'Avg High Goal Auton', 'descending'),
     ('LowerPortAuton', 'Avg Low Goal Auton', 'descending'),
 ]

@@ -81,13 +81,13 @@
                           						<label>Low Balls Scored in Autonomous:</label>
                         							<div class="small-4 columns">
 
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerPortAuton").stepDown(1);' value='-'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerHubAuton").stepDown(1);' value='-'/>
                         							</div>
                         							<div class="small-4 columns">
-                           					 			<input required type="number" name="LowerPortAuton" id="LowerPortAuton" min="0" step="1" value ="0" required readonly>
+                           					 			<input required type="number" name="LowerHubAuton" id="LowerHubAuton" min="0" step="1" value ="0" required readonly>
                         							</div>
                         							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerPortAuton").stepUp(1);' value='+'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerHubAuton").stepUp(1);' value='+'/>
                         							</div>
                       							</div>
                    				 			</div>
@@ -98,13 +98,13 @@
                           						<label>High Balls Scored in Autonomous:</label>
                         							<div class="small-4 columns">
 
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperPortAuton").stepDown(1);' value='-'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperHubAuton").stepDown(1);' value='-'/>
                         							</div>
                         							<div class="small-4 columns">
-                           					 			<input required type="number" name="UpperPortAuton" id="UpperPortAuton" min="0" step="1" value ="0" required readonly>
+                           					 			<input required type="number" name="UpperHubAuton" id="UpperHubAuton" min="0" step="1" value ="0" required readonly>
                         							</div>
                         							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperPortAuton").stepUp(1);' value='+'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperHubAuton").stepUp(1);' value='+'/>
                         							</div>
                       							</div>
                    				 			</div>
@@ -124,13 +124,13 @@
                           						<label>Low Balls Scored:</label>
                         							<div class="small-4 columns">
 
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerPort").stepDown(1);' value='-'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerHub").stepDown(1);' value='-'/>
                         							</div>
                         							<div class="small-4 columns">
-                           					 			<input required type="number" name="LowerPort" id="LowerPort" min="0" step="1" value ="0" required readonly>
+                           					 			<input required type="number" name="LowerHub" id="LowerHub" min="0" step="1" value ="0" required readonly>
                         							</div>
                         							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerPort").stepUp(1);' value='+'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerHub").stepUp(1);' value='+'/>
                         							</div>
                       							</div>
                    				 			</div>
@@ -141,33 +141,42 @@
                       						<div class="row collapse">
                           						<label>High Balls Scored:</label>
                         							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperPort").stepDown(1);' value='-'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperHub").stepDown(1);' value='-'/>
                         							</div>
                         							<div class="small-4 columns">
-                           								 <input required type="number" name="UpperPort" id="UpperPort" min="0" step="1" value ="0" required readonly>
+                           								 <input required type="number" name="UpperHub" id="UpperHub" min="0" step="1" value ="0" required readonly>
                         							</div>
                         							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperPort").stepUp(1);' value='+'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperHub").stepUp(1);' value='+'/>
                         							</div>
                       							</div>
                    				 			</div>
                   						</div>
 								<fieldset>
-									<legend> Control Panel:</legend>
-									<input name="ControlPanel1" id="ControlPanel1" type="checkbox"><label for="ControlPanel1">Stage 1 Control Panel?</label>
-									<input name="ControlPanel2" id="ControlPanel2" type="checkbox"><label for="ControlPanel2">Stage 2 Control Panel?</label>
-								</fieldset>
-								<fieldset>
-                                    <legend>Climbing:</legend>	
-									<input name="Climb" id="Climb" type="checkbox"><label for="Climb">Successful Climb?</label>
+									<div class="row">
+                    					<div class="large-12 columns">
+                      						<div class="row collapse">
+                          						<label>Climb height:</label>
+                        							<div class="small-4 columns">
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("Climb").stepDown(1);' value='-'/>
+                        							</div>
+                        							<div class="small-4 columns">
+                           								 <input required type="number" name="Climb" id="Climb" min="0" step="1" value ="0" required readonly>
+                        							</div>
+                        							<div class="small-4 columns">
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("Climb").stepUp(1);' value='+'/>
+                        							</div>
+                      							</div>
+                   				 			</div>
+                  						</div>
 								</fieldset>
 								</div>
       						</div>
                             <div class="row">
-                            <div class="large-12 columns">
-                            <label>Comments
-                                <textarea name="comments" placeholder=""></textarea>
-                            </label>
+                           		<div class="large-12 columns">
+                            		<label>Comments
+                                		<textarea name="comments" placeholder=""></textarea>
+                            		</label>
                             </div>
 							<input class="button round SubmitButton" type="submit" value="Submit">
 					</dl>
