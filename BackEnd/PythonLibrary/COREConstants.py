@@ -113,7 +113,7 @@ RANK_OPTIONS = [
     # EXAMPLE     ('Defense', 'Defense Rating', 'category', ('Amazing', 'Good', 'Alright', 'Not Great')) (Also can look above for example^^^
     ('UpperHub', 'Avg High Goal', 'descending'),
     ('LowerHub', 'Avg Low Goal', 'descending'),
-    ('Climb', 'Avg Climbing Level', 'descending'),
+    ('ClimbLevel', 'Avg Climbing Level', 'descending'),
     ('AutoStart', 'Move In Auton', 'descending'),
     ('UpperPortAuton', 'Avg High Goal Auton', 'descending'),
     ('LowerPortAuton', 'Avg Low Goal Auton', 'descending'),
