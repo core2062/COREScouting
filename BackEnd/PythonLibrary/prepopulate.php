@@ -158,13 +158,13 @@
                       						<div class="row collapse">
                           						<label>Climb height:</label>
                         							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("Climb").stepDown(1);' value='-'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("ClimbLevel").stepDown(1);' value='-'/>
                         							</div>
                         							<div class="small-4 columns">
-                           								 <input required type="number" name="Climb" id="Climb" min="0" step="1" value ="0" required readonly>
+                           								 <input required type="number" name="ClimbLevel" id="ClimbLevel" min="0" step="1" value ="0" required readonly>
                         							</div>
                         							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("Climb").stepUp(1);' value='+'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("ClimbLevel").stepUp(1);' value='+'/>
                         							</div>
                       							</div>
                    				 			</div>
