@@ -238,7 +238,7 @@ class Team:
             Or 'ON' / 'OFF' if checkbox
             return : number of times 'key' exists """
 
-        if self._verify_category(category) == 1:
+        # if self._verify_category(category) == 1:
             count = 0
             for data in self._get_data(category):
                 if key == data:
