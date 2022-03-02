@@ -30,4 +30,4 @@ class TeamData(CORETeamData.Team):
         # Average Climb Level
         self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[4]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[5])
         # Percent Move in Autonomous
-        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[0]] = self.times_key_exists_in_category('AutoStart', 'ON') / MatchesPlayed
+        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[0]] = self.times_key_exists_in_category('Move In Auto', 'ON') / MatchesPlayed
