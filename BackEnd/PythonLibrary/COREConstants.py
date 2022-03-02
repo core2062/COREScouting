@@ -115,6 +115,6 @@ RANK_OPTIONS = [
     ('LowerHub', 'Avg Low Goal', 'descending'),
     ('ClimbLevel', 'Avg Climbing Level', 'descending'),
     ('AutoStart', 'Move In Auton', 'descending'),
-    ('UpperPortAuton', 'Avg High Goal Auton', 'descending'),
-    ('LowerPortAuton', 'Avg Low Goal Auton', 'descending'),
+    ('UpperHubAuton', 'Avg High Goal Auton', 'descending'),
+    ('LowerHubAuton', 'Avg Low Goal Auton', 'descending'),
 ]
