@@ -243,7 +243,7 @@ class Team:
             for data in self._get_data(category):
                 if key == data:
                     count += 1
-            return count
+        return count
 
     def list_all_results(self, category):
 
