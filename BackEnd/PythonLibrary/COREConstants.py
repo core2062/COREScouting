@@ -14,7 +14,7 @@ General Team Info (no dependency)
 
 TEAM_NUMBER = 2062
 
-COMPETITION_NAME = 'test2'
+COMPETITION_NAME = 'scoutingtraining2022'
 
 """===========================================
 Scout HTML input field names (form dependency)
