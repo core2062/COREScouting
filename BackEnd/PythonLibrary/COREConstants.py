@@ -17,7 +17,7 @@ TEAM_NUMBER = 2062
 COMPETITION_NAME = '2022_milwaukee_practice'
 
 """===========================================
-Scout HTML input field names (form dependency)
+Scout HTML input field names (form dependency)=
 -------------------------------------------"""
 
 #  form value name that contains the match and team number. (change second name)
