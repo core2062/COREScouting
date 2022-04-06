@@ -167,7 +167,7 @@
                         							<div class="small-4 columns">
                           								<input required type='button' class="button postfix" onclick='document.getElementById("ClimbLevel").stepUp(1);' value='+'/>
 													</div>
-													-->
+													
 													<div class="climber-radio">
 														<input type="radio" id="Level 0" name="ClimbLevel" value="0" checked>
 														<label for="Level 0">Level 0</label>
@@ -180,6 +180,7 @@
 														<input type="radio" id="Level 4" name="ClimbLevel" value="4">
 														<label for="Level 4">Level 4</label>
 													</div>
+													-->
                       							</div>
                    				 			</div>
                   						</div>
