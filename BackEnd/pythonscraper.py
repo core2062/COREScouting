@@ -3,8 +3,10 @@
 import requests
 import json
 
-matches_url = "https://www.thebluealliance.com/api/v3/event/2022wimi/matches"
-headers = {'X-TBA-Auth-Key': 'put api token here'}
+apiKey = input()
+
+matches_url = "https://www.thebluealliance.com/api/v3/event/2022ilch/matches"
+headers = {'X-TBA-Auth-Key': apiKey}
 
 response = requests.get(matches_url, headers=headers)
 
