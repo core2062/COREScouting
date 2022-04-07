@@ -157,7 +157,8 @@
                     					<div class="large-12 columns">
                       						<div class="row collapse">
                           						<label>Climb height:</label>
-                        							<div class="small-4 columns">
+                        							<!--
+													<div class="small-4 columns">
                           								<input required type='button' class="button postfix" onclick='document.getElementById("ClimbLevel").stepDown(1);' value='-'/>
                         							</div>
                         							<div class="small-4 columns">
@@ -165,7 +166,21 @@
                         							</div>
                         							<div class="small-4 columns">
                           								<input required type='button' class="button postfix" onclick='document.getElementById("ClimbLevel").stepUp(1);' value='+'/>
-                        							</div>
+													</div>
+													-->
+													<div class="climber-radio">
+														<input type="radio" id="Level 0" name="ClimbLevel" value="0" checked>
+														<label for="Level 0">Level 0</label>
+														<input type="radio" id="Level 1" name="ClimbLevel" value="1">
+														<label for="Level 1">Level 1</label>
+														<input type="radio" id="Level 2" name="ClimbLevel" value="2">
+														<label for="Level 2">Level 2</label>
+														<input type="radio" id="Level 3" name="ClimbLevel" value="3">
+														<label for="Level 3">Level 3</label>
+														<input type="radio" id="Level 4" name="ClimbLevel" value="4">
+														<label for="Level 4">Level 4</label>
+													</div>
+													
                       							</div>
                    				 			</div>
                   						</div>
