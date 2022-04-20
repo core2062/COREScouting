@@ -14,7 +14,7 @@ if response.status_code == 200:
     print('Got good stuff')
     # print(response.json())
 else:
-    printf('ooops that did not work')
+    print('ooops that did not work')
     exit(1)
 
 match_data = json.loads(response.text)
