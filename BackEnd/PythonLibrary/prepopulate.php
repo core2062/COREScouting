@@ -78,16 +78,16 @@
 									<div class="row">
                     					<div class="large-12 columns">
                       						<div class="row collapse">
-                          						<label>Low Balls Scored in Autonomous:</label>
+                          						<label>Items Scored on the lower level in Autonomous:</label>
                         							<div class="small-4 columns">
 
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerHubAuton").stepDown(1);' value='-'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerLevelAuton").stepDown(1);' value='-'/>
                         							</div>
                         							<div class="small-4 columns">
-                           					 			<input required type="number" name="LowerHubAuton" id="LowerHubAuton" min="0" step="1" value ="0" required readonly>
+                           					 			<input required type="number" name="LowerLevelAuton" id="LowerLevelAuton" min="0" step="1" value ="0" required readonly>
                         							</div>
                         							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerHubAuton").stepUp(1);' value='+'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerLevelAuton").stepUp(1);' value='+'/>
                         							</div>
                       							</div>
                    				 			</div>
@@ -95,16 +95,33 @@
 										<div class="row">
                     					<div class="large-12 columns">
                       						<div class="row collapse">
-                          						<label>High Balls Scored in Autonomous:</label>
+                          						<label>Items Scored on the middle level in Autonomous:</label>
                         							<div class="small-4 columns">
 
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperHubAuton").stepDown(1);' value='-'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("MiddleLevelAuton").stepDown(1);' value='-'/>
                         							</div>
                         							<div class="small-4 columns">
-                           					 			<input required type="number" name="UpperHubAuton" id="UpperHubAuton" min="0" step="1" value ="0" required readonly>
+                           					 			<input required type="number" name="MiddleLevelAuton" id="MiddleLevelAuton" min="0" step="1" value ="0" required readonly>
                         							</div>
                         							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperHubAuton").stepUp(1);' value='+'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("MiddleLevelAuton").stepUp(1);' value='+'/>
+                        							</div>
+                      							</div>
+                   				 			</div>
+										  </div>
+										<div class="row">
+                    					<div class="large-12 columns">
+                      						<div class="row collapse">
+                          						<label>Items Scored on the high level in Autonomous:</label>
+                        							<div class="small-4 columns">
+
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperLevelAuton").stepDown(1);' value='-'/>
+                        							</div>
+                        							<div class="small-4 columns">
+                           					 			<input required type="number" name="UpperLevelAuton" id="UpperLevelAuton" min="0" step="1" value ="0" required readonly>
+                        							</div>
+                        							<div class="small-4 columns">
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperLevelAuton").stepUp(1);' value='+'/>
                         							</div>
                       							</div>
                    				 			</div>
@@ -121,16 +138,34 @@
                    					<div class="row">
                     					<div class="large-12 columns">
                       						<div class="row collapse">
-                          						<label>Low Balls Scored:</label>
+                          						<label>Items Scored on the lower level:</label>
                         							<div class="small-4 columns">
 
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerHub").stepDown(1);' value='-'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerLevel").stepDown(1);' value='-'/>
                         							</div>
                         							<div class="small-4 columns">
-                           					 			<input required type="number" name="LowerHub" id="LowerHub" min="0" step="1" value ="0" required readonly>
+                           					 			<input required type="number" name="LowerLevel" id="LowerLevel" min="0" step="1" value ="0" required readonly>
                         							</div>
                         							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerHub").stepUp(1);' value='+'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("LowerLevel").stepUp(1);' value='+'/>
+                        							</div>
+                      							</div>
+                   				 			</div>
+                  						</div>
+
+										<div class="row">
+                    					<div class="large-12 columns">
+                      						<div class="row collapse">
+                          						<label>Items Scored on the middle level:</label>
+                        							<div class="small-4 columns">
+
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("MiddleLevel").stepDown(1);' value='-'/>
+                        							</div>
+                        							<div class="small-4 columns">
+                           					 			<input required type="number" name="MiddleLevel" id="MiddleLevel" min="0" step="1" value ="0" required readonly>
+                        							</div>
+                        							<div class="small-4 columns">
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("MiddleLevel").stepUp(1);' value='+'/>
                         							</div>
                       							</div>
                    				 			</div>
@@ -139,15 +174,15 @@
 									<div class="row">
                     					<div class="large-12 columns">
                       						<div class="row collapse">
-                          						<label>High Balls Scored:</label>
+                          						<label>Items Scored on the high level:</label>
                         							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperHub").stepDown(1);' value='-'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperLevel").stepDown(1);' value='-'/>
                         							</div>
                         							<div class="small-4 columns">
-                           								 <input required type="number" name="UpperHub" id="UpperHub" min="0" step="1" value ="0" required readonly>
+                           								 <input required type="number" name="UpperLevel" id="UpperLevel" min="0" step="1" value ="0" required readonly>
                         							</div>
                         							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperHub").stepUp(1);' value='+'/>
+                          								<input required type='button' class="button postfix" onclick='document.getElementById("UpperLevel").stepUp(1);' value='+'/>
                         							</div>
                       							</div>
                    				 			</div>
@@ -170,15 +205,11 @@
 													-->
 													<div class="climber-radio">
 														<input type="radio" id="Level 0" name="ClimbLevel" value="0" checked>
-														<label for="Level 0">Level 0</label>
+														<label for="Level 0">Not Docked</label>
 														<input type="radio" id="Level 1" name="ClimbLevel" value="1">
-														<label for="Level 1">Level 1</label>
+														<label for="Level 1">Docked and not Engaged</label>
 														<input type="radio" id="Level 2" name="ClimbLevel" value="2">
-														<label for="Level 2">Level 2</label>
-														<input type="radio" id="Level 3" name="ClimbLevel" value="3">
-														<label for="Level 3">Level 3</label>
-														<input type="radio" id="Level 4" name="ClimbLevel" value="4">
-														<label for="Level 4">Level 4</label>
+														<label for="Level 2">Docked and Engaged</label>
 													</div>
 													
                       							</div>

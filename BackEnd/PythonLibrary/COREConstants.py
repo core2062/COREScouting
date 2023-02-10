@@ -29,10 +29,12 @@ CHECKBOX_NAMES = [
 ]
 NUMBER_NAMES = [
     MATCH_NUMBER['match_number'],
-    'UpperHub',
-    'LowerHub',
-    'UpperHubAuton',
-    'LowerHubAuton',
+    'UpperLevel',
+    'MiddleLevel',
+    'LowerLevel',
+    'UpperLevelAuton',
+    'MiddleLevelAuton',
+    'LowerLevelAuton',
     'ClimbLevel'
 
 ]
@@ -65,10 +67,12 @@ Match Report Row Headers (no dependency)
 
 # Show up on Match Report and Ranking Report if applicable
 RANK_AND_MATCH_HEADERS = [
-    'Avg High Goal',
-    'Avg Low Goal',
-    'Avg High Goal Auton',
-    'Avg Low Goal Auton',
+    'Avg High Level',
+    'Avg Middle Level',
+    'Avg Low Level',
+    'Avg High Level Auton',
+    'Avg Middle Level Auton',
+    'Avg Low Level Auton',
     'Avg Climbing Level',
 ]
 
@@ -111,10 +115,12 @@ RANK_REPORT_FIELD_NAMES = {
 
 RANK_OPTIONS = [
     # EXAMPLE     ('Defense', 'Defense Rating', 'category', ('Amazing', 'Good', 'Alright', 'Not Great')) (Also can look above for example^^^
-    ('UpperHub', 'Avg High Goal', 'descending'),
-    ('LowerHub', 'Avg Low Goal', 'descending'),
+    ('UpperLevel', 'Avg High Goal', 'descending'),
+    ('MiddleLevel', 'Avg middle Goal', 'descending'),
+    ('LowerLevel', 'Avg Low Goal', 'descending'),
     ('ClimbLevel', 'Avg Climbing Level', 'descending'),
     ('AutoStart', 'Move In Auton', 'descending'),
-    ('UpperHubAuton', 'Avg High Goal Auton', 'descending'),
-    ('LowerHubAuton', 'Avg Low Goal Auton', 'descending'),
+    ('UpperLevelAuton', 'Avg High Goal Auton', 'descending'),
+    ('MiddleLevelAuton', 'Avg Middle Goal Auton', 'descending'),
+    ('LowerLevelAuton', 'Avg Low Goal Auton', 'descending'),
 ]

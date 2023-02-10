@@ -21,13 +21,15 @@ class TeamData(CORETeamData.Team):
         self.team_data[COREDependencies.COREConstants.MATCH_HEADERS[0]] = self.list_all_results(COREDependencies.COREConstants.TEXT_NAMES[1])
         # Average # of Balls in High Goal
         self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[0]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[1])
-        # Average # of Balls in Low Goal
+        # Average # of Balls in Middle Goal
         self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[1]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[2])
-        # Average # of Balls in High Goal Auton
+        # Average # of Balls in Low Goal
         self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[2]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[3])
-        # Average # of Balls in Low Goal Auton
+        # Average # of Balls in High Goal Auton
         self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[3]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[4])
-        # Climb Level
+        # Average # of Balls in Low Goal Auton
         self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[4]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[5])
+        # Climb Level
+        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[5]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[6])
         # Percent Move in Autonomous
         self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[0]] = self.times_key_exists_in_category('AutoStart', 'ON')# / MatchesPlayed
