@@ -191,7 +191,7 @@
 									<div class="row">
                     					<div class="large-12 columns">
                       						<div class="row collapse">
-                          						<label>Climb height:</label>
+                          						<label>Charging station:</label>
                         							<!--
 													<div class="small-4 columns">
                           								<input required type='button' class="button postfix" onclick='document.getElementById("ClimbLevel").stepDown(1);' value='-'/>
@@ -220,8 +220,8 @@
       						</div>
                             <div class="row">
                            		<div class="large-12 columns">
-                            		<label>Comments
-                                		<textarea name="comments" placeholder=""></textarea>
+                            		<label>Comments (Remember Gracious Professionalism)
+                                		<textarea name="comments" placeholder="played defence; scored cubes; got a red card;"></textarea>
                             		</label>
                             </div>
 							<input class="button round SubmitButton" type="submit" value="Submit">
