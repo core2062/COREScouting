@@ -191,7 +191,7 @@
 									<div class="row">
                     					<div class="large-12 columns">
                       						<div class="row collapse">
-                          						<label>Climb height:</label>
+                          						<label>Charging station:</label>
                         							<!--
 													<div class="small-4 columns">
                           								<input required type='button' class="button postfix" onclick='document.getElementById("ClimbLevel").stepDown(1);' value='-'/>
