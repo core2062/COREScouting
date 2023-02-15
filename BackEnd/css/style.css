@@ -16,6 +16,8 @@
 	--table-match-number: #b0b0b0;
 	--table-color-blue: #a0a0dd;
 	--table-color-red: #ffa0a0;
+	--table-hover-blue: #8080dd;
+	--table-hover-red: #ff8080;
 }
 
 
@@ -30,6 +32,7 @@ body {
 	background-color: var(--dark-gray);
 	margin: 0 3%;
 	padding: 0px 0px;
+	padding-bottom: 4px;
 	height: 100%;
 	
 }
@@ -140,6 +143,17 @@ div.sched {
 		font-size: 13px !important;
 	}
 
+	html {
+		height: 100vh;
+	}
+
+	footer {
+		position: fixed;
+		left: 3%;
+		bottom: 0;
+	  width: 100%;
+	}
+
 	body {
 		margin: 0px 4px !important;
 	}
@@ -164,8 +178,26 @@ div.sched {
 	h1 {
 		font: 20px/20px 'Orbitron', serif !important;
 	}
+
+	footer {
+		left: 3%;
+		bottom: 0;
+	  width: 100%;
+	}
 }
 
+footer {
+	margin-top: 10px;
+	margin-left: -3%;
+	margin-right: -3%;
+	margin-bottom: -10px;
+	padding: 10px 10px;
+	background-color: var(--div-color);
+}
+
+footer p {
+	font: 15px/15px 'Orbitron', serif !important;
+}
 
 
 /*
@@ -201,8 +233,16 @@ tr td:nth-child(2).us,tr td:nth-child(3).us,tr td:nth-child(4).us {
 	background-color: var(--table-color-blue) !important;
 }
 
+tr td:nth-child(2).us:hover,tr td:nth-child(3).us:hover,tr td:nth-child(4).us:hover {
+	background-color: var(--table-hover-blue) !important;
+}
+
 tr td:nth-child(5).us,tr td:nth-child(6).us,tr td:nth-child(7).us {
 	background-color: var(--table-color-red) !important;
+}
+
+tr td:nth-child(5).us:hover,tr td:nth-child(6).us:hover,tr td:nth-child(7).us:hover {
+	background-color: var(--table-hover-red) !important;
 }
 
 tr:nth-child(even) {
@@ -214,7 +254,8 @@ tr:nth-child(odd) {
 
 
 table {
-	width: 100%;
+	width: calc(100% - 20px);
+	margin: 0px 10px;
 }
 tr {
 	text-align: center;
