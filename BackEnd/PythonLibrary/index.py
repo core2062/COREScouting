@@ -28,7 +28,7 @@ print('<!-- <img src="images/header.png"> This for some reason failed to load on
 print('<hr>')
 print('<nav>')
 print('<ul>')
-print('<li><a href="index.html"><button class = "active">HOME</button></a></li>')
+print('<li><a href="PythonLibrary/index.py"><button class = "active">HOME</button></a></li>')
 print('<li><a href="PythonLibrary/CORETeamSelect.py"><button>SCOUT FORM</button></a></li>')
 print('<li><a href="PythonLibrary/COREMatchScheduleDisplay.py"><button>MATCH REPORT</button></a></li>')
 print('<li><a href="GenerateRankingReport.html"><button>RANKING REQUEST</button></a></li>')
