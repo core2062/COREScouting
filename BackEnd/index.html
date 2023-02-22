@@ -3,30 +3,156 @@
 <html class="no-js" lang="en" >
 
 <head>
-	<meta charset="utf-8">
-	<link rel="shortcut icon" href="favicon.ico" />
-	<meta name="description" content="CORE 2062 Scouting">
-	<meta name="author" content="CORE2062">
-	<meta name="robots" content="noindex, nofollow">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<title>CORE 2062 Scouting | Index Redirect</title>
-
-	<meta http-equiv = "refresh" content = "0; url = PythonLibrary/index.py" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" integrity="sha256-t2/7smZfgrST4FS1DT0bs/KotCM74XlcqZN5Vu7xlrw=" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css" integrity="sha256-NTds7atVCDeolLUzbcl45lx4gJYO+hNXCaX1wC2HQHc=" crossorigin="anonymous" /> 
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="description" content="CORE 2062 Scouting">
+  <meta name="author" content="CORE2062">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>CORE 2062 Scouting | Admin Index</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" integrity="sha256-t2/7smZfgrST4FS1DT0bs/KotCM74XlcqZN5Vu7xlrw=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css" integrity="sha256-NTds7atVCDeolLUzbcl45lx4gJYO+hNXCaX1wC2HQHc=" crossorigin="anonymous" /> 
+	<!--<link rel="stylesheet" href="css/app.css">/-->
 	<link rel="stylesheet" href="css/style.css">
-	<!--<link rel="stylesheet" href="css/app.css">
-	<meta http-equiv = "refresh" content = "2; url = index.py" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
-	-->
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
+
 </head>
 <body>
-	<p>
-		Redirecting...
-	</p><br>
-	<p>
-		If you are not redirected, click <a href="PythonLibrary/index.py">[HERE]</a>
-	</p>
+	<!-- <img src="images/header.png"> This for some reason failed to load on server -->
+	
+	<hr>
+	<nav>
+		<ul>
+			<li><a href="index.html"><button class = "active">HOME</button></a></li>
+			<li><a href="PythonLibrary/CORETeamSelect.py"><button>SCOUT FORM</button></a></li>
+			<li><a href="PythonLibrary/COREMatchScheduleDisplay.py"><button>MATCH REPORT</button></a></li>
+			<li><a href="GenerateRankingReport.html"><button>RANKING REQUEST</button></a></li>
+			<li><a href="PythonLibrary/CORETeamReportDisplay.py"><button>TEAM ANALYSIS</button></a></li>
+		</ul>
+	</nav>
+	<h1>CORE Scouting</h1>
+	<div>
+		<p>This is the CORE 2062 scouting homepage</p>
+	</div>
+	<div class="sched">
+		<h1>CORE 2062 Schedule</h1>
+		<!-- replace w/ table of events -->
+		<!-- Will be changed to pull from database for our schedule -->
+		<table>
+			<tr>
+		    <th>Match Number</th>
+		    <th>Blue 1</th>
+		    <th>Blue 2</th>
+				<th>Blue 3</th>
+		    <th>Red 2</th>
+				<th>Red 1</th>
+		    <th>Red 3</th>
+		  </tr>
+		  <tr>
+		    <td>4</td>
+		    <td>6381</td>
+		    <td>3488</td>
+				<td>3695</td>
+				<td class = "us">2062</td>
+				<td>4645</td>
+				<td>7237</td>
+		  </tr>
+		  <tr>
+		    <td>10</td>
+		    <td>2451</td>
+		    <td>4241</td>
+				<td>2830</td>
+				<td class = "us">2062</td>
+				<td>5553</td>
+				<td>6651</td>
+		  </tr>
+			<tr>
+		    <td>16</td>
+		    <td class = "us">2062</td>
+		    <td>2151</td>
+				<td>1732</td>
+				<td>2358</td>
+				<td>48</td>
+				<td>6651</td>
+		  </tr>
+			<tr>
+		    <td>26</td>
+		    <td>8029</td>
+		    <td>8880</td>
+				<td class = "us">2062</td>
+				<td>677</td>
+				<td>7237</td>
+				<td>4292</td>
+		  </tr>
+			<tr>
+		    <td>34</td>
+		    <td>111</td>
+		    <td class = "us">2062</td>
+				<td>3067</td>
+				<td>8868</td>
+				<td>4145</td>
+				<td>1739</td>
+		  </tr>
+			<tr>
+		    <td>42</td>
+		    <td>2338</td>
+		    <td>5934</td>
+				<td>3061</td>
+				<td class = "us">2062</td>
+				<td>1781</td>
+				<td>4787</td>
+		  </tr>
+			<tr>
+		    <td>48</td>
+		    <td>4096</td>
+		    <td>8880</td>
+				<td>5822</td>
+				<td>5934</td>
+				<td>8868</td>
+				<td class = "us">2062</td>
+		  </tr>
+			<tr>
+		    <td>58</td>
+		    <td>1781</td>
+		    <td>101</td>
+				<td>7460</td>
+				<td>112</td>
+				<td class = "us">2062</td>
+				<td>3110</td>
+		  </tr>
+      <tr>
+		    <td>63</td>
+		    <td>5847</td>
+		    <td>8802</td>
+				<td class = "us">2062</td>
+				<td>3734</td>
+				<td>8122</td>
+				<td>3352</td>
+		  </tr>
+      <tr>
+		    <td>74</td>
+		    <td>2338</td>
+		    <td>8029</td>
+				<td>2022</td>
+				<td>5125</td>
+				<td class = us>2062</td>
+				<td>1739</td>
+		  </tr>
+		</table>
+	</div>
+	
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js" integrity="sha256-KXypdIy75PPHsbEaVkrhBvlQg8XTQy8NvalzrIxMrco=" crossorigin="anonymous"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </body>
+<footer>
+	<p>
+		This page was made for the CORE 2062 scouting team for use in the 2023 season.
+	</p>
+</footer>
 </html>
 
