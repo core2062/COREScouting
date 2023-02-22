@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+
 :root {
 	--body-color: #000000;
 	--dark-gray: #909090;
@@ -8,6 +11,16 @@
 	--hover-color: #c0c0c0;
 	--text-hover-color: #000000;
 	--secondary-color: #d0d0d0;
+	--text-color: #000000;
+	--table-color-even: #d0d0d0;
+	--table-color-odd: #c0c0c0;
+	--table-hover-even: #f0f0f0;
+	--table-hover-odd: #c5c5c5c5;
+	--table-match-number: #b0b0b0;
+	--table-color-blue: #a0a0dd;
+	--table-color-red: #ffa0a0;
+	--table-hover-blue: #8080dd;
+	--table-hover-red: #ff8080;
 	--text-color: #000000;
 	--table-color-even: #d0d0d0;
 	--table-color-odd: #c0c0c0;
@@ -27,6 +40,7 @@ html {
 	min-height: 100%;
 	background-color: var(--body-color);
 	
+	
 }
 
 body {
@@ -34,7 +48,9 @@ body {
 	margin: 0 3%;
 	padding: 0px 0px;
 	padding-bottom: 4px;
+	padding-bottom: 4px;
 	height: 100%;
+	
 	
 }
 
@@ -49,6 +65,7 @@ hr {
 div {
 	background-color: var(--div-color);
 	margin: 0 2%;
+	justify-content: center;
 	justify-content: center;
 }
 
@@ -81,7 +98,10 @@ li {
 li a {
   display: block;
   
+  
   text-align: center;
+	
+  padding: 0px 0px;
 	
   padding: 0px 0px;
 	margin: 0;
@@ -90,13 +110,16 @@ li a {
 }
 
 button:hover {
+button:hover {
   background-color: var(--hover-color);
 }
 
 button.active {
+button.active {
 	background-color: var(--hover-color);
 }
 
+button a:hover {
 button a:hover {
 	color: var(--text-hover-color)
 }
@@ -110,6 +133,8 @@ button {
 	margin: 0;
 	color: var(--text-color);
 	/*font: 1em/20px 'Orbitron', serif;*/
+	color: var(--text-color);
+	/*font: 1em/20px 'Orbitron', serif;*/
 	background-color: var(--secondary-color);
 }
 
@@ -118,6 +143,7 @@ nav ul li button a {
 }
 
 h1 {
+	font: 30px/30px 'Orbitron', serif;
 	font: 30px/30px 'Orbitron', serif;
 	text-align: center;
 }
@@ -169,6 +195,26 @@ div.schedLeft {
 
 	h1 {
 		font: 25px/25px 'Orbitron', serif !important;
+		font-size: 13px !important;
+	}
+
+	html {
+		height: 100vh;
+	}
+
+	footer {
+		position: fixed;
+		left: 3%;
+		bottom: 0;
+	  width: 100%;
+	}
+
+	body {
+		margin: 0px 4px !important;
+	}
+
+	h1 {
+		font: 25px/25px 'Orbitron', serif !important;
 	}
 
 	div.form {
@@ -189,6 +235,17 @@ div.schedLeft {
 
 @media (max-width: 500px) {
 	* {
+		font-size: 12px !important;
+	}
+
+	h1 {
+		font: 20px/20px 'Orbitron', serif !important;
+	}
+
+	footer {
+		left: 3%;
+		bottom: 0;
+	  width: 100%;
 		font-size: 12px !important;
 	}
 
@@ -226,7 +283,56 @@ This is from the last stylesheet
 
 table, th, td, tr {
   text-align: center !important; 
+  text-align: center !important; 
 }
+
+table {
+	background-color: var(--table-color-even);
+}
+
+tr:nth-child(even):hover td:hover {
+	background-color: var(--table-hover-even) !important;
+}
+
+tr:nth-child(odd):hover td:hover {
+	background-color: var(--table-hover-odd) !important;
+}
+
+tr td:nth-child(1) {
+	background-color: var(--table-match-number) !important;
+}
+
+tr:hover td:nth-child(1):hover {
+	background-color: var(--table-match-number) !important;
+}
+
+tr td:nth-child(2).us,tr td:nth-child(3).us,tr td:nth-child(4).us {
+	background-color: var(--table-color-blue) !important;
+}
+
+tr td:nth-child(2).us:hover,tr td:nth-child(3).us:hover,tr td:nth-child(4).us:hover {
+	background-color: var(--table-hover-blue) !important;
+}
+
+tr td:nth-child(5).us,tr td:nth-child(6).us,tr td:nth-child(7).us {
+	background-color: var(--table-color-red) !important;
+}
+
+tr td:nth-child(5).us:hover,tr td:nth-child(6).us:hover,tr td:nth-child(7).us:hover {
+	background-color: var(--table-hover-red) !important;
+}
+
+tr:nth-child(even) {
+  background-color: var(--table-color-even);
+}
+tr:nth-child(odd) {
+  background-color: var(--table-color-odd);
+}
+
+
+table {
+	width: calc(100% - 20px);
+	margin: 0px 10px;
 
 table {
 	background-color: var(--table-color-even);
@@ -294,6 +400,7 @@ td.not_ready_to_generate {
 td.my_team {
 	font-weight: bold;
 }
+
 
 
 /* This is old CSS that is no longer used ATM
