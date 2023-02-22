@@ -48,12 +48,12 @@ for team in team_numbers:
         int_nums.append(int(team))
 int_nums.sort()
 COREDependencies.framework_begining()
-print('<b> Teams: </b>')
+print('<h1> Teams: </h1>')
+print('<p>This is where all the data collected on each team is stored</p>')
 print('<table>')
 for team in int_nums:
     print('<tr>')
-    print('<td><img src="http://2062scouting.imgix.net/' + str(team) +
-          '.jpg?h=200" alt="Team Image Not Available"></td>')
+    # print('<td><img src="http://2062scouting.imgix.net/' + str(team) + '.jpg?h=200" alt="Team Image Not Available"></td>') <-- Images does not work
     print('<td><a href="CORETeamReport.py?team_number=' +
           str(team) + '">' + str(team) + '</a></td>')
     print('</tr>')
