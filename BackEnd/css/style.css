@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
 
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
-
-
 :root {
 	--body-color: #000000;
 	--dark-gray: #909090;
@@ -21,26 +18,13 @@
 	--table-color-red: #ffa0a0;
 	--table-hover-blue: #8080dd;
 	--table-hover-red: #ff8080;
-	--text-color: #000000;
-	--table-color-even: #d0d0d0;
-	--table-color-odd: #c0c0c0;
-	--table-hover-even: #f0f0f0;
-	--table-hover-odd: #c5c5c5c5;
-	--table-match-number: #b0b0b0;
-	--table-color-blue: #a0a0dd;
-	--table-color-red: #ffa0a0;
-	--table-hover-blue: #8080dd;
-	--table-hover-red: #ff8080;
 }
 
 
 html {
 	width: 100%;
-	height: 100%;
-	min-height: 100%;
+	height: unset;
 	background-color: var(--body-color);
-	
-	
 }
 
 body {
@@ -48,9 +32,7 @@ body {
 	margin: 0 3%;
 	padding: 0px 0px;
 	padding-bottom: 4px;
-	padding-bottom: 4px;
 	height: 100%;
-	
 	
 }
 
@@ -65,7 +47,6 @@ hr {
 div {
 	background-color: var(--div-color);
 	margin: 0 2%;
-	justify-content: center;
 	justify-content: center;
 }
 
@@ -98,10 +79,7 @@ li {
 li a {
   display: block;
   
-  
   text-align: center;
-	
-  padding: 0px 0px;
 	
   padding: 0px 0px;
 	margin: 0;
@@ -110,16 +88,13 @@ li a {
 }
 
 button:hover {
-button:hover {
   background-color: var(--hover-color);
 }
 
 button.active {
-button.active {
 	background-color: var(--hover-color);
 }
 
-button a:hover {
 button a:hover {
 	color: var(--text-hover-color)
 }
@@ -133,8 +108,6 @@ button {
 	margin: 0;
 	color: var(--text-color);
 	/*font: 1em/20px 'Orbitron', serif;*/
-	color: var(--text-color);
-	/*font: 1em/20px 'Orbitron', serif;*/
 	background-color: var(--secondary-color);
 }
 
@@ -143,7 +116,6 @@ nav ul li button a {
 }
 
 h1 {
-	font: 30px/30px 'Orbitron', serif;
 	font: 30px/30px 'Orbitron', serif;
 	text-align: center;
 }
@@ -154,10 +126,10 @@ p {
 }
 
 div.form {
-	width: 30%;
 	float: left;
-	padding-left: 10px;
-	margin-right: -1%;
+	display: inline-block;
+	width: 300px;
+	padding-left: 5px;
 	background-color: var(--div-color);
 }
 
@@ -166,35 +138,8 @@ div.sched {
 	display: block;
 }
 
-div.schedLeft {
-	justify-content: center;
-	display: block;
-	float:left;
-	width:65%;
-}
-
 @media (max-width: 800px) {
 	* {
-		font-size: 13px !important;
-	}
-
-	html {
-		height: 100vh;
-	}
-
-	footer {
-		position: fixed;
-		left: 3%;
-		bottom: 0;
-	  width: 100%;
-	}
-
-	body {
-		margin: 0px 4px !important;
-	}
-
-	h1 {
-		font: 25px/25px 'Orbitron', serif !important;
 		font-size: 13px !important;
 	}
 
@@ -223,14 +168,6 @@ div.schedLeft {
 		justify-content: center;
 		float: center !important;
 	}
-	div.schedLeft {
-		float: center !important;
-		justify-content: center;
-		width: 70% !important;
-		margin-top: 10px;
-		margin-left: 15% !important;
-		margin-right: 15% !important;
-	}
 }
 
 @media (max-width: 500px) {
@@ -246,26 +183,13 @@ div.schedLeft {
 		left: 3%;
 		bottom: 0;
 	  width: 100%;
-		font-size: 12px !important;
-	}
-
-	h1 {
-		font: 20px/20px 'Orbitron', serif !important;
-	}
-
-	footer {
-		left: 3%;
-		bottom: 0;
-	  width: 100%;
 	}
 }
 
 footer {
-	position: fixed;
-  bottom: 0;
-	width:100%;
-	margin-left:-3%;
 	margin-top: 10px;
+	margin-left: -3%;
+	margin-right: -3%;
 	margin-bottom: -10px;
 	padding: 10px 10px;
 	background-color: var(--div-color);
@@ -283,7 +207,6 @@ This is from the last stylesheet
 
 table, th, td, tr {
   text-align: center !important; 
-  text-align: center !important; 
 }
 
 table {
@@ -298,56 +221,13 @@ tr:nth-child(odd):hover td:hover {
 	background-color: var(--table-hover-odd) !important;
 }
 
-tr td:nth-child(1) {
-	background-color: var(--table-match-number) !important;
-}
-
-tr:hover td:nth-child(1):hover {
-	background-color: var(--table-match-number) !important;
-}
-
-tr td:nth-child(2).us,tr td:nth-child(3).us,tr td:nth-child(4).us {
-	background-color: var(--table-color-blue) !important;
-}
-
-tr td:nth-child(2).us:hover,tr td:nth-child(3).us:hover,tr td:nth-child(4).us:hover {
-	background-color: var(--table-hover-blue) !important;
-}
-
-tr td:nth-child(5).us,tr td:nth-child(6).us,tr td:nth-child(7).us {
-	background-color: var(--table-color-red) !important;
-}
-
-tr td:nth-child(5).us:hover,tr td:nth-child(6).us:hover,tr td:nth-child(7).us:hover {
-	background-color: var(--table-hover-red) !important;
-}
-
-tr:nth-child(even) {
-  background-color: var(--table-color-even);
-}
-tr:nth-child(odd) {
-  background-color: var(--table-color-odd);
-}
-
-
-table {
-	width: calc(100% - 20px);
-	margin: 0px 10px;
-
-table {
-	background-color: var(--table-color-even);
-}
-
-tr:nth-child(even):hover td:hover {
-	background-color: var(--table-hover-even) !important;
-}
-
-tr:nth-child(odd):hover td:hover {
-	background-color: var(--table-hover-odd) !important;
-}
 
 tr td:nth-child(1) {
 	background-color: var(--table-match-number) !important;
+}
+
+tr td:nth-child(1).contains-us {
+	background-color: var(--dark-gray) !important;
 }
 
 tr:hover td:nth-child(1):hover {
@@ -402,7 +282,6 @@ td.my_team {
 }
 
 
-
 /* This is old CSS that is no longer used ATM
 td.colRed{
 	background-color: red;
@@ -430,3 +309,55 @@ td.orange{
 	background-color: #ff731c;
 }
 */
+
+/* for the prepopulate.php section of the site */
+
+
+/* This finally works and I'm never touching it again */
+ul.tabs {
+	margin-left: 11%;
+}
+
+li.tab-title {
+	color: var(--secondary-color) !important;
+	height: 50px !important;
+	width: 30%;
+	margin-bottom: 10px !important;
+}
+
+li.active {
+	color: var(--div-color) !important;
+}
+
+div.collapse div.columns {
+	width: 25% !important;
+	background-color: var(--div-color) !important;
+	color: var(--body-color) !important; /* I'm blue dabade dabadie  */
+	float: left !important;
+	margin: 0 0;
+}
+
+div.collapse div.columns input.button {
+	background-color: var(--dark-gray) !important; /* I'm no longer blue dabade dabadie */
+}
+
+div.collapse {
+	justify-content: center !important;
+}
+
+div.content {
+	background-color: var(--div-color) !important;
+	width: 90%;
+	margin-left: 5%;
+}
+
+input.SubmitButton {
+	width: 15%;
+	margin-left: 43.5%;
+	background-color: var(--dark-gray) !important;
+}
+
+div.columns.large-12 {
+	width: 90%;
+	margin-left: 5%;
+}

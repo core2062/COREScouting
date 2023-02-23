@@ -23,10 +23,8 @@
 
 html {
 	width: 100%;
-	height: 100%;
-	min-height: 100%;
+	height: unset;
 	background-color: var(--body-color);
-	
 }
 
 body {
@@ -59,7 +57,6 @@ nav{
 	padding: 0;
 	position:relative;
 	width: 100%;
-	margin-bottom: 10px;
 }
 
 
@@ -129,23 +126,16 @@ p {
 }
 
 div.form {
-	width: 30%;
 	float: left;
-	padding-left: 10px;
-	margin-right: -1%;
+	display: inline-block;
+	width: 300px;
+	padding-left: 5px;
 	background-color: var(--div-color);
 }
 
 div.sched {
 	justify-content: center;
 	display: block;
-}
-
-div.schedLeft {
-	justify-content: center;
-	display: block;
-	float:left;
-	width:65%;
 }
 
 @media (max-width: 800px) {
@@ -178,14 +168,6 @@ div.schedLeft {
 		justify-content: center;
 		float: center !important;
 	}
-	div.schedLeft {
-		float: center !important;
-		justify-content: center;
-		width: 70% !important;
-		margin-top: 10px;
-		margin-left: 15% !important;
-		margin-right: 15% !important;
-	}
 }
 
 @media (max-width: 500px) {
@@ -205,11 +187,9 @@ div.schedLeft {
 }
 
 footer {
-	position: fixed;
-  bottom: 0;
-	width:100%;
-	margin-left:-3%;
 	margin-top: 10px;
+	margin-left: -3%;
+	margin-right: -3%;
 	margin-bottom: -10px;
 	padding: 10px 10px;
 	background-color: var(--div-color);
@@ -241,8 +221,13 @@ tr:nth-child(odd):hover td:hover {
 	background-color: var(--table-hover-odd) !important;
 }
 
+
 tr td:nth-child(1) {
 	background-color: var(--table-match-number) !important;
+}
+
+tr td:nth-child(1).contains-us {
+	background-color: var(--dark-gray) !important;
 }
 
 tr:hover td:nth-child(1):hover {
@@ -324,3 +309,55 @@ td.orange{
 	background-color: #ff731c;
 }
 */
+
+/* for the prepopulate.php section of the site */
+
+
+/* This finally works and I'm never touching it again */
+ul.tabs {
+	margin-left: 11%;
+}
+
+li.tab-title {
+	color: var(--secondary-color) !important;
+	height: 50px !important;
+	width: 30%;
+	margin-bottom: 10px !important;
+}
+
+li.active {
+	color: var(--div-color) !important;
+}
+
+div.collapse div.columns {
+	width: 25% !important;
+	background-color: var(--div-color) !important;
+	color: var(--body-color) !important; /* I'm blue dabade dabadie  */
+	float: left !important;
+	margin: 0 0;
+}
+
+div.collapse div.columns input.button {
+	background-color: var(--dark-gray) !important; /* I'm no longer blue dabade dabadie */
+}
+
+div.collapse {
+	justify-content: center !important;
+}
+
+div.content {
+	background-color: var(--div-color) !important;
+	width: 90%;
+	margin-left: 5%;
+}
+
+input.SubmitButton {
+	width: 15%;
+	margin-left: 43.5%;
+	background-color: var(--dark-gray) !important;
+}
+
+div.columns.large-12 {
+	width: 90%;
+	margin-left: 5%;
+}
