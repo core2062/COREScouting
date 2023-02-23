@@ -358,6 +358,13 @@ input.SubmitButton {
 }
 
 div.columns.large-12 {
-	width: 90%;
-	margin-left: 5%;
+	margin-left: 0% !important;
+}
+
+div.content-box.section-box {
+	padding-left: 20%;
+}
+
+div.content-box.section-box.ignore-padding-offset {
+	padding-left: 0% !important;
 }

@@ -47,7 +47,7 @@
       					
       					<a href="#panel1" class="show-for-small-only">Match/Scout Info</a>
       						<div id="panel1" class="content active">
-      							<div class="content-box section-box">
+      							<div class="content-box section-box ignore-padding-offset">
       								<div class="row">
       									<div class="small-12 columns">
       										<label>Match Number: *
