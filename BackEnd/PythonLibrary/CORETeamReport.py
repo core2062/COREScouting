@@ -66,7 +66,7 @@ print('</table>')
 print('<table class="ignore-header-style">')
 print('<tr>')
 for dictionary_key in COREDependencies.COREConstants.ALL_NAMES:
-    print('<td style="font-size:5vw;">', add_spaces(dictionary_key), '</td>')
+    print('<td style="font-size:1vw !important;">', add_spaces(dictionary_key), '</td>')
 print('</tr>')
 for rows in range(0, (raw_team_data.num_data_entries(COREDependencies.COREConstants.MATCH_NUMBER['match_number']))):
     print('<tr>')
