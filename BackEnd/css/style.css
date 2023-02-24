@@ -208,6 +208,11 @@ table, th, td, tr {
   text-align: center !important; 
 }
 
+table {
+	background-color: var(--table-color-even);
+	width: 100%;
+}
+
 tr:nth-child(even):hover td:hover {
 	background-color: var(--table-hover-even) !important;
 }
@@ -225,16 +230,16 @@ tr td:nth-child(1).contains-us {
 	background-color: var(--dark-gray) !important;
 }
 
-
-
 table.ignore-header-style tr:nth-child(even) td:nth-child(1) {
 	background-color: var(--table-hover-even) !important;
-	width: 10% !important;
 }
 
 table.ignore-header-style tr:nth-child(odd) td:nth-child(1) {
 	background-color: var(--table-hover-odd) !important;
-	width: 10% !important;
+}
+
+table.ignore-header-style tr td {
+	font-size: 1.5vh !important;
 }
 
 tr:hover td:nth-child(1):hover {
@@ -266,9 +271,8 @@ tr:nth-child(odd) {
 
 
 table {
-	width: calc(100% - 20px) !important;
-	margin: 0px 10px !important;
-	background-color: var(--table-color-even) !important;
+	width: calc(100% - 20px);
+	margin: 0px 10px;
 }
 tr {
 	text-align: center;
