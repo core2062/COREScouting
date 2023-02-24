@@ -28,7 +28,7 @@ print('<tr>')
 
 def add_spaces(string:str) -> str:
     temp_name = []
-    for index, letter in enumerate(string):
+    for letter, index in enumerate(string):
         if letter.isupper() and index > 0:
             temp_name.append(" ")
         temp_name.append(letter)
