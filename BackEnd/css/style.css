@@ -126,7 +126,6 @@ p {
 }
 
 div.form {
-	float: left;
 	display: inline-block;
 	width: 300px;
 	padding-left: 5px;
