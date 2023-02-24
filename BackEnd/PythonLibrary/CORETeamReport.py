@@ -27,14 +27,14 @@ print('<table>')
 print('<tr>')
 for dictionary_key in COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS:
     print('<td>', dictionary_key, '</td>')
-for dictionary_key in COREDependencies.COREConstants.MATCH_HEADERS:
+for dictionary_key in COREDependencies.COREConstants.MATCH_HEADERS: # covers 
     print('<td>', dictionary_key, '</td>')
 for dictionary_key in COREDependencies.COREConstants.RANK_ONLY_HEADERS:
     print('<td>', dictionary_key, '</td>')
 print('</tr>')
 print('<tr>')
 for dictionary_key in COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS:
-    if(type(calculated_team_data.team_data[dictionary_key]) == str):
+    if (type(calculated_team_data.team_data[dictionary_key]) == str):
         print('<td>' + str((calculated_team_data.team_data[dictionary_key]).encode("ascii", 'ignore')) + '</td>')
     else: 
         print('<td>' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
@@ -52,6 +52,8 @@ for dictionary_key in COREDependencies.COREConstants.RANK_ONLY_HEADERS:
 print('</tr>')
 print('</table>')
 
+
+# table for all data collected from people by 
 print('<table>')
 print('<tr>')
 for dictionary_key in COREDependencies.COREConstants.ALL_NAMES:
