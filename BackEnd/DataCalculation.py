@@ -32,6 +32,6 @@ class TeamData(CORETeamData.Team):
         # Charging Station Engagment Level
         self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[5]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[6])
         # Charging Station Engagment Level Auton
-        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[5]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[6])
+        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[6]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[7])
         # Percent Move in Autonomous
         self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[0]] = self.times_key_exists_in_category('AutoStart', 'ON')# / MatchesPlayed
