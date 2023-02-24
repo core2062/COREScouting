@@ -25,12 +25,21 @@ print(str(team_number))
 # print('<img src="http://2062scouting.imgix.net/' + str(team_number) + '.jpg?h=200" alt="Team Image Not Available">') <-- Images still don't work
 print('<table class="ignore-header-style">')
 print('<tr>')
+
+def add_spaces(string:str) -> str:
+    temp_name = dictionary_key # set tempname to realname
+    index_shift = 0
+    for index, letter in enumerate(dictionary_key):
+        if letter.isupper():
+            temp_name = temp_name[0,index+index_shift] + " " + temp_name[index+index_shift,len(temp_name)]
+    return temp_name
+
 for dictionary_key in COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS:
-    print('<td>', dictionary_key, '</td>')
+    print('<td>', add_spaces(dictionary_key), '</td>')
 for dictionary_key in COREDependencies.COREConstants.MATCH_HEADERS: # covers 
-    print('<td>', dictionary_key, '</td>')
+    print('<td>', add_spaces(dictionary_key), '</td>')
 for dictionary_key in COREDependencies.COREConstants.RANK_ONLY_HEADERS:
-    print('<td>', dictionary_key, '</td>')
+    print('<td>', add_spaces(dictionary_key), '</td>')
 print('</tr>')
 print('<tr>')
 for dictionary_key in COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS:
