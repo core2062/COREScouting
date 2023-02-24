@@ -35,7 +35,7 @@ def add_spaces(string:str) -> str:
     return "".join(temp_name)
 
 for dictionary_key in COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS:
-    print('<td>', str(add_spaces(dictionary_key)), '</td>')
+    print('<td>', add_spaces(dictionary_key), '</td>')
 for dictionary_key in COREDependencies.COREConstants.MATCH_HEADERS: # covers 
     print('<td>', add_spaces(dictionary_key), '</td>')
 for dictionary_key in COREDependencies.COREConstants.RANK_ONLY_HEADERS:
@@ -66,7 +66,7 @@ print('</table>')
 print('<table class="ignore-header-style">')
 print('<tr>')
 for dictionary_key in COREDependencies.COREConstants.ALL_NAMES:
-    print('<td>', dictionary_key, '</td>')
+    print('<td>', add_spaces(dictionary_key), '</td>')
 print('</tr>')
 for rows in range(0, (raw_team_data.num_data_entries(COREDependencies.COREConstants.MATCH_NUMBER['match_number']))):
     print('<tr>')
