@@ -28,14 +28,14 @@ print('<tr>')
 
 def add_spaces(string:str) -> str:
     temp_name = []
-    for letter, index in enumerate(string):
+    for index, letter  in enumerate(string):
         if letter.isupper() and index > 0:
             temp_name.append(" ")
         temp_name.append(letter)
     return "".join(temp_name)
 
 for dictionary_key in COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS:
-    print('<td>', add_spaces(dictionary_key), '</td>')
+    print('<td>', str(add_spaces(dictionary_key)), '</td>')
 for dictionary_key in COREDependencies.COREConstants.MATCH_HEADERS: # covers 
     print('<td>', add_spaces(dictionary_key), '</td>')
 for dictionary_key in COREDependencies.COREConstants.RANK_ONLY_HEADERS:
