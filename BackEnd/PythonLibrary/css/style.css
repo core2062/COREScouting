@@ -210,6 +210,7 @@ table, th, td, tr {
 
 table {
 	background-color: var(--table-color-even);
+	width: 100%;
 }
 
 tr:nth-child(even):hover td:hover {
