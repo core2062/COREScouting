@@ -225,6 +225,10 @@ tr td:nth-child(1).contains-us {
 	background-color: var(--dark-gray) !important;
 }
 
+table.ignore-header-style {
+	width: 50% !important;
+} /* chagnes */
+
 table.ignore-header-style tr:nth-child(even) td:nth-child(1) {
 	background-color: var(--table-hover-even) !important;
 }
