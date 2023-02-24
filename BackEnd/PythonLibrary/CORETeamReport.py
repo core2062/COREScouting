@@ -23,7 +23,7 @@ COREDependencies.framework_begining()
 print('<body link="##000000">')
 print(str(team_number))
 # print('<img src="http://2062scouting.imgix.net/' + str(team_number) + '.jpg?h=200" alt="Team Image Not Available">') <-- Images still don't work
-print('<table class="ignore-header-style>')
+print('<table class="ignore-header-style">')
 print('<tr>')
 for dictionary_key in COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS:
     print('<td>', dictionary_key, '</td>')
