@@ -239,7 +239,7 @@ table.ignore-header-style tr:nth-child(odd) td:nth-child(1) {
 }
 
 table.ignore-header-style tr td {
-	font-size: 1.5vh !important;
+	overflow: scroll;
 }
 
 tr:hover td:nth-child(1):hover {
