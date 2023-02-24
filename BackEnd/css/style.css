@@ -210,7 +210,7 @@ table, th, td, tr {
 
 table {
 	background-color: var(--table-color-even);
-	width:100%;
+	width: 100%;
 }
 
 tr:nth-child(even):hover td:hover {
@@ -228,6 +228,14 @@ tr td:nth-child(1) {
 
 tr td:nth-child(1).contains-us {
 	background-color: var(--dark-gray) !important;
+}
+
+table.ignore-header-style tr:nth-child(even) td:nth-child(1) {
+	background-color: var(--table-hover-even) !important;
+}
+
+table.ignore-header-style tr:nth-child(odd) td:nth-child(1) {
+	background-color: var(--table-hover-odd) !important;
 }
 
 tr:hover td:nth-child(1):hover {
@@ -371,4 +379,8 @@ div.content-box.section-box.ignore-padding-offset {
 
 div.content-box.section-box fieldset {
 	margin-left: -20%;
+}
+
+input {
+	background-color: var(--dark-gray);
 }

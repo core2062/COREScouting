@@ -39,8 +39,8 @@ for match in COREDependencies.COREMatchSchedule.SCHEDULE:
     match_num += 1
 print('</table>')
 print('<form action="prepopulate.php" method="get">')
-# print('MatchNumber= <input type="number" name="match" required>') # --< Possibly Not Implemented >-- #
-# print('TeamNumber= <input type="number" name="team" required>')
+print('MatchNumber= <input type="number" name="match" required>') # --< Possibly Not Implemented >-- #
+print('TeamNumber= <input type="number" name="team" required>')
 print('<input type="submit" value="submit"><br>')
 print('</form>')
 COREDependencies.framework_end()

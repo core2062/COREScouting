@@ -380,3 +380,7 @@ div.content-box.section-box.ignore-padding-offset {
 div.content-box.section-box fieldset {
 	margin-left: -20%;
 }
+
+input {
+	background-color: var(--dark-gray);
+}
