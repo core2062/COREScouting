@@ -262,9 +262,9 @@ tr:nth-child(odd) {
 
 
 table {
-	width: calc(100% - 20px);
-	margin: 0px 10px;
-	background-color: var(--table-color-even);
+	width: calc(100% - 20px) !important;
+	margin: 0px 10px !important;
+	background-color: var(--table-color-even) !important;
 }
 tr {
 	text-align: center;
