@@ -238,6 +238,10 @@ table.ignore-header-style tr:nth-child(odd) td:nth-child(1) {
 	background-color: var(--table-hover-odd) !important;
 }
 
+table.ignore-header-style tr td {
+	font-size: 1.5vh;
+}
+
 tr:hover td:nth-child(1):hover {
 	background-color: var(--table-match-number) !important;
 }
