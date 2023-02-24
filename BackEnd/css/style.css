@@ -238,12 +238,12 @@ table.ignore-header-style tr:nth-child(odd) td:nth-child(1) {
 	background-color: var(--table-hover-odd) !important;
 }
 
-table.ignore-header-style tr td {
-	font-size: 1.5vh !important;
+table.ignore-header-style {
+	overflow: scroll;
 }
 
 tr:hover td:nth-child(1):hover {
-	overflow: scroll;
+	background-color: var(--table-match-number) !important;
 }
 
 tr td:nth-child(2).us,tr td:nth-child(3).us,tr td:nth-child(4).us {
