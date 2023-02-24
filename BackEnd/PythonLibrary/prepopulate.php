@@ -130,6 +130,23 @@
 										  </div>
 										  							
                                         <input name="AutoStart" id="AutoStart" type="checkbox"><label for="AutoStart">Moved in Auto?</label>
+										<fieldset>
+										<div class="row">
+											<div class="large-12 columns">
+												<div class="row collapse">
+													<label>Charging station:</label>
+													<div class="climber-radio">
+														<input type="radio" id="Level 0" name="ChargingStationAuton" value="0" checked>
+														<label for="Level 0">Not Docked</label>
+														<input type="radio" id="Level 1" name="ChargingStationAuton" value="1">
+														<label for="Level 1">Docked and not Engaged</label>
+														<input type="radio" id="Level 2" name="ChargingStationAuton" value="2">
+														<label for="Level 2">Docked and Engaged</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</fieldset>
       								</div>
 								  </div>
 
@@ -194,23 +211,12 @@
                     					<div class="large-12 columns">
                       						<div class="row collapse">
                           						<label>Charging station:</label>
-                        							<!--
-													<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("ClimbLevel").stepDown(1);' value='-'/>
-                        							</div>
-                        							<div class="small-4 columns">
-                           								 <input required type="number" name="ClimbLevel" id="ClimbLevel" min="0" step="1" value ="0" required readonly>
-                        							</div>
-                        							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("ClimbLevel").stepUp(1);' value='+'/>
-													</div>
-													-->
 													<div class="climber-radio">
-														<input type="radio" id="Level 0" name="ClimbLevel" value="0" checked>
+														<input type="radio" id="Level 0" name="ChargingStation" value="0" checked>
 														<label for="Level 0">Not Docked</label>
-														<input type="radio" id="Level 1" name="ClimbLevel" value="1">
+														<input type="radio" id="Level 1" name="ChargingStation" value="1">
 														<label for="Level 1">Docked and not Engaged</label>
-														<input type="radio" id="Level 2" name="ClimbLevel" value="2">
+														<input type="radio" id="Level 2" name="ChargingStation" value="2">
 														<label for="Level 2">Docked and Engaged</label>
 													</div>
 													

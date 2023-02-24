@@ -29,7 +29,9 @@ class TeamData(CORETeamData.Team):
         self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[3]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[4])
         # Average # of Balls in Low Goal Auton
         self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[4]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[5])
-        # Climb Level
+        # Charging Station Engagment Level
+        self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[5]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[6])
+        # Charging Station Engagment Level Auton
         self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[5]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[6])
         # Percent Move in Autonomous
         self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[0]] = self.times_key_exists_in_category('AutoStart', 'ON')# / MatchesPlayed

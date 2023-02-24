@@ -368,3 +368,7 @@ div.content-box.section-box {
 div.content-box.section-box.ignore-padding-offset {
 	padding-left: 0% !important;
 }
+
+div.content-box.section-box fieldset {
+	margin-left: -20%;
+}
