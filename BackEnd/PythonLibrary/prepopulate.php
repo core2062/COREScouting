@@ -134,7 +134,7 @@
 										<div class="row">
 											<div class="large-12 columns">
 												<div class="row collapse">
-													<label>Charging station:</label>
+													<label>Charging station auton:</label>
 													<div class="climber-radio">
 														<input type="radio" id="Level 0" name="ChargingStationAuton" value="0" checked>
 														<label for="Level 0">Not Docked</label>
