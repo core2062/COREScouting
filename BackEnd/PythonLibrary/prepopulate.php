@@ -33,7 +33,15 @@
 
 	</head>
 	<body>
-
+		<nav>
+			<ul>
+				<li><a href="../index.html"><button class = "active">HOME</button></a></li>
+				<li><a href="CORETeamSelect.py"><button>SCOUT FORM</button></a></li>
+				<li><a href="COREMatchScheduleDisplay.py"><button>MATCH REPORT</button></a></li>
+				<li><a href="../GenerateRankingReport.html"><button>RANKING REQUEST</button></a></li>
+				<li><a href="CORETeamReportDisplay.py"><button>TEAM ANALYSIS</button></a></li>
+			</ul>
+		</nav>
 		<form name="main" id="form" action="COREDataEntry.py" method="post" data-parsley-validate>
 			<div class="row">
 				<div class="small-12 columns">
