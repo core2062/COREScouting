@@ -248,6 +248,8 @@ class Rankings:
         print('</body>')
         print('</html>')
 
+
+COREDependencies.framework_begining()
 form_data = Rankings()
 form_data.change_form_names(COREDependencies.COREConstants.RANK_REPORT_FIELD_NAMES['ranking_options'])
 for item in COREDependencies.COREConstants.RANK_OPTIONS:
@@ -256,3 +258,4 @@ for item in COREDependencies.COREConstants.RANK_OPTIONS:
     else:
         form_data.register_rank_option(item[0], item[1], item[2])
 form_data.generate_table()
+COREDependencies.framework_end()
