@@ -219,7 +219,7 @@ class Rankings:
         print('<title>Team 2062s Scouting Match Table Report</title>')
         print('</head>')
         print('<body>')
-        print('<link href="COREStyle_std.css" rel="stylesheet" type="text/css" />')
+        #print('<link href="COREStyle_std.css" rel="stylesheet" type="text/css" />')
         for item in self._rank_option_data:
             if self._form.getvalue(self._rank_option_name) == item[0]:
                 if item[2] == 'ascending':
