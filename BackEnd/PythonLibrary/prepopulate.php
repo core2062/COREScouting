@@ -75,7 +75,7 @@
 									<div class="row">
 										<div class="small-12 columns">
 											<label>Scout Name: *
-												<input name="ScoutName" placeholder="John Smith" autocomplete="off" data-parsley-required="true"/>
+												<input name="ScoutName" placeholder="Jane Doe" autocomplete="off" data-parsley-required="true"/>
 											</label>
 										</div>
 									</div>
