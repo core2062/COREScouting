@@ -59,7 +59,7 @@
       								<div class="row">
       									<div class="small-12 columns">
       										<label>Match Number: *
-											  <input  name="MatchNumber" class="form-control" type="number" placeholder="1" value="<?php echo $_GET['match']; ?>" required="" readonly/>
+											  <input  name="MatchNumber" class="form-control" type="number" placeholder="1" value="<?php echo $_GET['match']; ?>" required=""/>
 											</label>
 										</div>
 									</div>
@@ -67,7 +67,7 @@
 									<div class="row">
 										<div class="small-12 columns">
 											<label>Team Number: *
-												<input name="TeamNumber" class="form-control" type="number" value="<?php echo $_GET['team']; ?>" required="" placeholder="2062" readonly/>
+												<input name="TeamNumber" class="form-control" type="number" value="<?php echo $_GET['team']; ?>" required="" placeholder="2062"/>
 											</label>
 										</div>
 									</div>
@@ -75,7 +75,7 @@
 									<div class="row">
 										<div class="small-12 columns">
 											<label>Scout Name: *
-												<input name="ScoutName" placeholder="John Smith" autocomplete="off" data-parsley-required="true"/>
+												<input name="ScoutName" placeholder="Jane Doe" autocomplete="off" data-parsley-required="true"/>
 											</label>
 										</div>
 									</div>
