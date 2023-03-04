@@ -219,7 +219,7 @@ class Rankings:
         print('<title>Team 2062s Scouting Match Table Report</title>')
         print('</head>')
         print('<body>')
-        print('<link href="COREStyle_std.css" rel="stylesheet" type="text/css" />')
+        #print('<link href="COREStyle_std.css" rel="stylesheet" type="text/css" />')
         for item in self._rank_option_data:
             if self._form.getvalue(self._rank_option_name) == item[0]:
                 if item[2] == 'ascending':
@@ -248,6 +248,8 @@ class Rankings:
         print('</body>')
         print('</html>')
 
+
+COREDependencies.framework_begining()
 form_data = Rankings()
 form_data.change_form_names(COREDependencies.COREConstants.RANK_REPORT_FIELD_NAMES['ranking_options'])
 for item in COREDependencies.COREConstants.RANK_OPTIONS:
@@ -256,3 +258,4 @@ for item in COREDependencies.COREConstants.RANK_OPTIONS:
     else:
         form_data.register_rank_option(item[0], item[1], item[2])
 form_data.generate_table()
+COREDependencies.framework_end()

@@ -14,7 +14,7 @@ General Team Info (no dependency)
 
 TEAM_NUMBER = 2062
 
-COMPETITION_NAME = '2023_test'
+COMPETITION_NAME = '2023_Training' # name of DB
 
 """===========================================
 Scout HTML input field names (form dependency)=
@@ -35,7 +35,8 @@ NUMBER_NAMES = [
     'UpperLevelAuton',
     'MiddleLevelAuton',
     'LowerLevelAuton',
-    'ClimbLevel'
+    'ChargingStation',
+    'ChargingStationAuton'
 
 ]
 TEXT_NAMES = [
@@ -73,7 +74,8 @@ RANK_AND_MATCH_HEADERS = [
     'Avg High Level Auton',
     'Avg Middle Level Auton',
     'Avg Low Level Auton',
-    'Avg Climbing Level',
+    'Avg Charging Station',
+    'Avg Charging Station Auton'
 ]
 
 # Shows up as a ranking Option only
@@ -118,9 +120,10 @@ RANK_OPTIONS = [
     ('UpperLevel', 'Avg High Goal', 'descending'),
     ('MiddleLevel', 'Avg middle Goal', 'descending'),
     ('LowerLevel', 'Avg Low Goal', 'descending'),
-    ('ClimbLevel', 'Avg Climbing Level', 'descending'),
+    ('ChargingStation', 'Avg Charging Station', 'descending'),
     ('AutoStart', 'Move In Auton', 'descending'),
     ('UpperLevelAuton', 'Avg High Goal Auton', 'descending'),
     ('MiddleLevelAuton', 'Avg Middle Goal Auton', 'descending'),
     ('LowerLevelAuton', 'Avg Low Goal Auton', 'descending'),
+    ('ChargingStationAuton', 'Avg Charging Station Auton', 'descending')
 ]

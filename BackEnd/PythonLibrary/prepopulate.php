@@ -25,13 +25,23 @@
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.1/awesomplete.min.css" integrity="sha256-pMulKeKs7Hns5vhu0uluhawM68QSrKg/dFfttaXCKE8=" crossorigin="anonymous" />
 
+		<link rel="stylesheet" href="css/style.css">
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.6.2/parsley.min.js" integrity="sha256-QKOftzbqahZaXS2amOh27JacZ6TbmT4TmGxNo4Jue4Y=" crossorigin="anonymous"></script>
 
 		<script type="text/javascript" src="show.js?v=1"></script>
 
 	</head>
 	<body>
-
+		<nav>
+			<ul>
+				<li><a href="../index.html"><button class = "active">HOME</button></a></li>
+				<li><a href="CORETeamSelect.py"><button>SCOUT FORM</button></a></li>
+				<li><a href="COREMatchScheduleDisplay.py"><button>MATCH REPORT</button></a></li>
+				<li><a href="../GenerateRankingReport.html"><button>RANKING REQUEST</button></a></li>
+				<li><a href="CORETeamReportDisplay.py"><button>TEAM ANALYSIS</button></a></li>
+			</ul>
+		</nav>
 		<form name="main" id="form" action="COREDataEntry.py" method="post" data-parsley-validate>
 			<div class="row">
 				<div class="small-12 columns">
@@ -45,7 +55,7 @@
       					
       					<a href="#panel1" class="show-for-small-only">Match/Scout Info</a>
       						<div id="panel1" class="content active">
-      							<div class="content-box section-box">
+      							<div class="content-box section-box ignore-padding-offset">
       								<div class="row">
       									<div class="small-12 columns">
       										<label>Match Number: *
@@ -128,6 +138,23 @@
 										  </div>
 										  							
                                         <input name="AutoStart" id="AutoStart" type="checkbox"><label for="AutoStart">Moved in Auto?</label>
+										<fieldset>
+										<div class="row">
+											<div class="large-12 columns">
+												<div class="row collapse">
+													<label>Charging station auton:</label>
+													<div class="climber-radio">
+														<input type="radio" id="Level 0" name="ChargingStationAuton" value="0" checked>
+														<label for="Level 0">Not Docked</label>
+														<input type="radio" id="Level 1" name="ChargingStationAuton" value="1">
+														<label for="Level 1">Docked and not Engaged</label>
+														<input type="radio" id="Level 2" name="ChargingStationAuton" value="2">
+														<label for="Level 2">Docked and Engaged</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</fieldset>
       								</div>
 								  </div>
 
@@ -192,23 +219,12 @@
                     					<div class="large-12 columns">
                       						<div class="row collapse">
                           						<label>Charging station:</label>
-                        							<!--
-													<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("ClimbLevel").stepDown(1);' value='-'/>
-                        							</div>
-                        							<div class="small-4 columns">
-                           								 <input required type="number" name="ClimbLevel" id="ClimbLevel" min="0" step="1" value ="0" required readonly>
-                        							</div>
-                        							<div class="small-4 columns">
-                          								<input required type='button' class="button postfix" onclick='document.getElementById("ClimbLevel").stepUp(1);' value='+'/>
-													</div>
-													-->
 													<div class="climber-radio">
-														<input type="radio" id="Level 0" name="ClimbLevel" value="0" checked>
+														<input type="radio" id="Level 0" name="ChargingStation" value="0" checked>
 														<label for="Level 0">Not Docked</label>
-														<input type="radio" id="Level 1" name="ClimbLevel" value="1">
+														<input type="radio" id="Level 1" name="ChargingStation" value="1">
 														<label for="Level 1">Docked and not Engaged</label>
-														<input type="radio" id="Level 2" name="ClimbLevel" value="2">
+														<input type="radio" id="Level 2" name="ChargingStation" value="2">
 														<label for="Level 2">Docked and Engaged</label>
 													</div>
 													
