@@ -47,7 +47,7 @@ for x in match_data:
     red3[match_number] = x["alliances"]["red"]["team_keys"][2].replace("frc","")
 
 print('SCHEDULE = [')
-for x in range(1,len(match_data)+1):
+for x in range(1,80):
     # print(x,'(',blue1[x],",",blue2[x],",",blue3[x],",",red1[x],",",red2[x],",",red3[x],')')
     print(f'({blue1[x]}, {blue2[x]}, {blue3[x]}, {red1[x]}, {red2[x]}, {red3[x]}),')
 
