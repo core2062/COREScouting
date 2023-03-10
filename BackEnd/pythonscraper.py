@@ -5,7 +5,7 @@ import json
 
 apiKey = input()
 
-matches_url = "https://www.thebluealliance.com/api/v3/event/2022ilch/matches"
+matches_url = "https://www.thebluealliance.com/api/v3/event/2023mosl/matches"
 headers = {'X-TBA-Auth-Key': apiKey}
 
 response = requests.get(matches_url, headers=headers)
