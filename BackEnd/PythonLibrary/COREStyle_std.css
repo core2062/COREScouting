@@ -12,3 +12,12 @@ table, th, td {
 td {
 	text-align: center;
 }
+
+div.vertical-form {
+	display: flex;
+	flex-direction: column;
+}
+
+div.vertical-form-child {
+	display: inline;
+}

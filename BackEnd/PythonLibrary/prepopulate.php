@@ -137,19 +137,25 @@
                    				 			</div>
 										  </div>
 										  							
-                                        <input name="AutoStart" id="AutoStart" type="checkbox"><label for="AutoStart">Moved in Auto?</label>
+                                        <input name="AutoStart" id="AutoStart" type="checkbox"><label for="AutoStart">Mobility Point (Left Community Zone)</label>
 										<fieldset>
 										<div class="row">
 											<div class="large-12 columns">
 												<div class="row collapse">
 													<label>Charging station auton:</label>
-													<div class="climber-radio">
-														<input type="radio" id="Level 0" name="ChargingStationAuton" value="0" checked>
-														<label for="Level 0">Not Docked</label>
-														<input type="radio" id="Level 1" name="ChargingStationAuton" value="1">
-														<label for="Level 1">Docked and not Engaged</label>
-														<input type="radio" id="Level 2" name="ChargingStationAuton" value="2">
-														<label for="Level 2">Docked and Engaged</label>
+													<div class="climber-radio"> <!-- This needs to be updated -->
+														<div>
+															<input type="radio" id="Level 0" name="ChargingStationAuton" value="0" checked>
+															<label for="Level 0">Not Docked</label>
+														</div>
+														<div>
+															<input type="radio" id="Level 1" name="ChargingStationAuton" value="1">
+															<label for="Level 1">Docked and not Engaged</label>
+														</div>
+														<div>
+															<input type="radio" id="Level 2" name="ChargingStationAuton" value="2">
+															<label for="Level 2">Docked and Engaged</label>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -214,18 +220,29 @@
                       							</div>
                    				 			</div>
                   						</div>
+								<input name="ScoredCones" id="ScoredCones" type="checkbox"><label for="ScoredCones">Scored Cones</label>
+								<input name="ScoredCubes" id="ScoredCubes" type="checkbox"><label for="ScoredCubes">Scored Cubes</label>
+								<input name="FloorPickup" id="FloorPickup" type="checkbox"><label for="FloorPickup">Floor Pickup</label>
+								<input name="HumanShelfPickup" id="HumanShelfPickup" type="checkbox"><label for="HumanShelfPickup">Human Shelf Pickup</label>
+								<input name="HumanFloorPickup" id="HumanFloorPickup" type="checkbox"><label for="HumanFloorPickup">Human Floor Pickup</label>
 								<fieldset>
 									<div class="row">
                     					<div class="large-12 columns">
                       						<div class="row collapse">
                           						<label>Charging station:</label>
-													<div class="climber-radio">
-														<input type="radio" id="Level 0" name="ChargingStation" value="0" checked>
-														<label for="Level 0">Not Docked</label>
-														<input type="radio" id="Level 1" name="ChargingStation" value="1">
-														<label for="Level 1">Docked and not Engaged</label>
-														<input type="radio" id="Level 2" name="ChargingStation" value="2">
-														<label for="Level 2">Docked and Engaged</label>
+													<div class="climber-radio vertical-form"> <!-- This also needs to be vertical -->
+														<div class="vertical-form-child>
+															<input type="radio" id="Level 0" name="ChargingStation" value="0" checked>
+															<label for="Level 0">Not Docked</label>
+														</div>
+														<div class="vertical-form-child>
+															<input type="radio" id="Level 1" name="ChargingStation" value="1">
+															<label for="Level 1">Docked and not Engaged</label>
+														</div>
+														<div class="vertical-form-child>
+															<input type="radio" id="Level 2" name="ChargingStation" value="2">
+															<label for="Level 2">Docked and Engaged</label>
+														</div>
 													</div>
 													
                       							</div>

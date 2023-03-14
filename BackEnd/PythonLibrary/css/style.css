@@ -389,3 +389,12 @@ div.content-box.section-box fieldset {
 input {
 	background-color: var(--dark-gray);
 }
+
+div.vertical-form {
+	display: flex;
+	flex-direction: column;
+}
+
+div.vertical-form-child {
+	display: inline;
+}

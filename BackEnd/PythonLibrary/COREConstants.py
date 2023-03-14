@@ -26,6 +26,11 @@ MATCH_NUMBER = {'match_number': 'MatchNumber'}
 
 CHECKBOX_NAMES = [
     'AutoStart',
+    'ScoredCones',
+    'ScoredCubes',
+    'FloorPickup',
+    'HumanShelfPickup',
+    'HumanFloorPickup',
 ]
 NUMBER_NAMES = [
     MATCH_NUMBER['match_number'],
