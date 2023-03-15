@@ -85,7 +85,12 @@ RANK_AND_MATCH_HEADERS = [
 
 # Shows up as a ranking Option only
 RANK_ONLY_HEADERS = [
-    'Move In Auto'
+    'Move In Auto',
+    'Scored Cones',
+    'Scored Cubes',
+    'Floor Pickup',
+    'Human Shelf Pickup',
+    'Human Floor Pickup',
 ]
 
 # Shows up on Match Report only
