@@ -37,3 +37,13 @@ class TeamData(CORETeamData.Team):
         self.team_data[COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS[7]] = self.avg_data(COREDependencies.COREConstants.NUMBER_NAMES[8])
         # Percent Move in Autonomous
         self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[0]] = self.times_key_exists_in_category('AutoStart', 'ON')# / MatchesPlayed
+        # If Robot Scored Cones
+        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[1]] = self.times_key_exists_in_category('ScoredCones', 'ON')# / MatchesPlayed
+        # If Robot Scored Cubes
+        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[2]] = self.times_key_exists_in_category('ScoredCubes', 'ON')# / MatchesPlayed
+        # If Robot Picked Up From Floor
+        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[3]] = self.times_key_exists_in_category('FloorPickup', 'ON')# / MatchesPlayed
+        # If Robot Picked Up From Human Player Shelf
+        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[4]] = self.times_key_exists_in_category('HumanShelfPickup', 'ON')# / MatchesPlayed
+        # If Robot Picked Up From Human Player Floor Input
+        self.team_data[COREDependencies.COREConstants.RANK_ONLY_HEADERS[5]] = self.times_key_exists_in_category('HumanFloorPickup', 'ON')# / MatchesPlayed
