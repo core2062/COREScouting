@@ -41,23 +41,23 @@ for dictionary_key in COREDependencies.COREConstants.MATCH_HEADERS: # covers
 for dictionary_key in COREDependencies.COREConstants.RANK_ONLY_HEADERS:
     print('<td>', add_spaces(dictionary_key), '</td>')
 print('</tr>')
-print('<tr>')
+print('<tr>') # actual data
 for dictionary_key in COREDependencies.COREConstants.RANK_AND_MATCH_HEADERS:
     if (type(calculated_team_data.team_data[dictionary_key]) == str):
-        print('<td>' + str((calculated_team_data.team_data[dictionary_key]).encode("ascii", 'ignore')) + '</td>')
+        print('<td id="RANK_AND_MATCH_HEADERS">' + str((calculated_team_data.team_data[dictionary_key]).encode("ascii", 'ignore')) + '</td>')
     else: 
-        print('<td>' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
+        print('<td id="RANK_AND_MATCH_HEADERS">' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
 for dictionary_key in COREDependencies.COREConstants.MATCH_HEADERS:
     if(type(calculated_team_data.team_data[dictionary_key]) == str):
         b = str((calculated_team_data.team_data[dictionary_key]).encode("ascii", 'ignore'))
-        print('<td>' + b[2:len(b)-2] + '</td>')
+        print('<td id="MATCH_HEADERS">' + b[2:len(b)-2] + '</td>')
     else: 
-        print('<td>' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
+        print('<td id="MATCH_HEADERS">' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
 for dictionary_key in COREDependencies.COREConstants.RANK_ONLY_HEADERS:
     if(type(calculated_team_data.team_data[dictionary_key]) == str):
-        print('<td>' + str((calculated_team_data.team_data[dictionary_key]).encode("ascii", 'ignore')) + '</td>')
+        print('<td id="RANK_ONLY_HEADERS">' + str((calculated_team_data.team_data[dictionary_key]).encode("ascii", 'ignore')) + '</td>')
     else: 
-        print('<td>' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
+        print('<td id="RANK_ONLY_HEADERS">' + str(calculated_team_data.team_data[dictionary_key]) + '</td>')
 print('</tr>')
 print('</table>')
 
