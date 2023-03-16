@@ -137,7 +137,7 @@
                    				 			</div>
 										  </div>
 										  							
-                                        <input name="AutoStart" id="AutoStart" type="checkbox"><label for="AutoStart">Mobility Point (Left Community Zone)</label>
+                                        <input name="AutoStart" id="AutoStart" type="checkbox"><label for="AutoStart">Mobility Point (Left the Community Zone)</label>
 										<fieldset>
 										<div class="row">
 											<div class="large-12 columns">
@@ -224,8 +224,8 @@
 									<div class="vertical-form-child"><input name="ScoredCones" id="ScoredCones" type="checkbox"><label for="ScoredCones">Scored Cones</label></div>
 									<div class="vertical-form-child"><input name="ScoredCubes" id="ScoredCubes" type="checkbox"><label for="ScoredCubes">Scored Cubes</label></div>
 									<div class="vertical-form-child"><input name="FloorPickup" id="FloorPickup" type="checkbox"><label for="FloorPickup">Floor Pickup</label></div>
-									<div class="vertical-form-child"><input name="HumanShelfPickup" id="HumanShelfPickup" type="checkbox"><label for="HumanShelfPickup">Human Shelf Pickup</label></div>
-									<div class="vertical-form-child"><input name="HumanFloorPickup" id="HumanFloorPickup" type="checkbox"><label for="HumanFloorPickup">Human Floor Pickup</label></div>
+									<div class="vertical-form-child"><input name="HumanShelfPickup" id="HumanShelfPickup" type="checkbox"><label for="HumanShelfPickup">Pickup from Shelf</label></div>
+									<div class="vertical-form-child"><input name="HumanFloorPickup" id="HumanFloorPickup" type="checkbox"><label for="HumanFloorPickup">Pickup from Side Feeder Station</label></div>
 								</div>
 								<fieldset>
 									<div class="row">
@@ -256,7 +256,7 @@
                             <div class="row">
                            		<div class="large-12 columns">
                             		<label>Comments (Remember Gracious Professionalism)
-                                		<textarea name="comments" placeholder="played defence; scored cubes; got a red card;"></textarea>
+                                		<textarea name="comments" placeholder="played defence on 2062; got a red card;"></textarea>
                             		</label>
                             </div>
 							<input class="button round SubmitButton" type="submit" value="Submit">
