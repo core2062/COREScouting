@@ -157,8 +157,7 @@
 									</fieldset>
       								</div>
 								  </div>
-
-      					<a href="#panel3" class="show-for-small-only">Teleoperated Period</a>
+						<a href="#panel3" class="show-for-small-only">Teleoperated Period</a>
       						<div id="panel3" class="content">
       							<div class="content-box section-box">
 
@@ -214,18 +213,31 @@
                       							</div>
                    				 			</div>
                   						</div>
+								<div class="vertical-form">
+									<div class="vertical-form-child"><input name="ScoredCones" id="ScoredCones" type="checkbox"><label for="ScoredCones">Scored Cones</label></div>
+									<div class="vertical-form-child"><input name="ScoredCubes" id="ScoredCubes" type="checkbox"><label for="ScoredCubes">Scored Cubes</label></div>
+									<div class="vertical-form-child"><input name="FloorPickup" id="FloorPickup" type="checkbox"><label for="FloorPickup">Floor Pickup</label></div>
+									<div class="vertical-form-child"><input name="HumanShelfPickup" id="HumanShelfPickup" type="checkbox"><label for="HumanShelfPickup">Pickup from Shelf</label></div>
+									<div class="vertical-form-child"><input name="HumanFloorPickup" id="HumanFloorPickup" type="checkbox"><label for="HumanFloorPickup">Pickup from Side Feeder Station</label></div>
+								</div>
 								<fieldset>
 									<div class="row">
                     					<div class="large-12 columns">
                       						<div class="row collapse">
                           						<label>Charging station:</label>
-													<div class="climber-radio">
-														<input type="radio" id="Level 0" name="ChargingStation" value="0" checked>
-														<label for="Level 0">Not Docked</label>
-														<input type="radio" id="Level 1" name="ChargingStation" value="1">
-														<label for="Level 1">Docked and not Engaged</label>
-														<input type="radio" id="Level 2" name="ChargingStation" value="2">
-														<label for="Level 2">Docked and Engaged</label>
+													<div class="climber-radio vertical-form"> <!-- This also needs to be vertical -->
+														<div class="vertical-form-child">
+															<input type="radio" id="Level 0" name="ChargingStation" value="0" checked>
+															<label for="Level 0">Not Docked</label>
+														</div>
+														<div class="vertical-form-child">
+															<input type="radio" id="Level 1" name="ChargingStation" value="1">
+															<label for="Level 1">Docked and not Engaged</label>
+														</div>
+														<div class="vertical-form-child">
+															<input type="radio" id="Level 2" name="ChargingStation" value="2">
+															<label for="Level 2">Docked and Engaged</label>
+														</div>
 													</div>
 													
                       							</div>
@@ -237,7 +249,7 @@
                             <div class="row">
                            		<div class="large-12 columns">
                             		<label>Comments (Remember Gracious Professionalism)
-                                		<textarea name="comments" placeholder="played defence; scored cubes; got a red card;"></textarea>
+                                		<textarea name="comments" placeholder="played defence on 2062; got a red card;"></textarea>
                             		</label>
                             </div>
 							<input class="button round SubmitButton" type="submit" value="Submit">
