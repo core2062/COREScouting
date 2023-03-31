@@ -5,7 +5,7 @@ import json
 
 apiKey = input()
 
-matches_url = "https://www.thebluealliance.com/api/v3/event/2023mosl/matches"
+matches_url = "https://www.thebluealliance.com/api/v3/event/2023wila/matches"
 headers = {'X-TBA-Auth-Key': apiKey}
 
 response = requests.get(matches_url, headers=headers)
@@ -47,7 +47,7 @@ for x in match_data:
     red3[match_number] = x["alliances"]["red"]["team_keys"][2].replace("frc","")
 
 print('SCHEDULE = [')
-for x in range(1,80):
+for x in range(1,91):
     # print(x,'(',blue1[x],",",blue2[x],",",blue3[x],",",red1[x],",",red2[x],",",red3[x],')')
     print(f'({blue1[x]}, {blue2[x]}, {blue3[x]}, {red1[x]}, {red2[x]}, {red3[x]}),')
 
